@@ -1,0 +1,21 @@
+// customize bootstrap variables here:
+@import "bootstrap";
+//Slick Slider
+@import "../plugins/slick/slick";
+
+//Modules and Variables
+@import "partials/base";
+
+// Partials
+@import "partials/header";
+@import "partials/footer";
+
+//Pages
+@import "partials/pages/home";
+
+
+*{font-family:$georgia;}
+.container{max-width:960px;}
+body{
+	background: url(../images/map.png) no-repeat right bottom;
+}

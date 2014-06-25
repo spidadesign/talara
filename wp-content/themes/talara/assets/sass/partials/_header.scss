@@ -1,0 +1,48 @@
+nav{
+	height: 40px;
+	background: $maroon;
+	border-radius: 0;
+}
+.navbar{
+	border:none;
+	margin-bottom:0;
+}
+.navbar-ex1-collapse{
+	a{
+		@include all-font(18px, white, $georgia);
+		&:hover{
+			
+		}
+	}
+}
+.nav{
+	>li{
+		>a{
+			&:hover, &:active{
+				background-color: $burgandy;
+			}
+		}
+	}
+}
+.nav{
+	.open{
+		> a{
+			&:hover, &:focus{
+				background-color: $burgandy;
+			}
+		}
+	}
+}
+.header-slider{
+	.slick-slide{
+		img{
+			width: 100%;
+			height: 475px;
+		}
+	}
+}
+.logo{
+	img{
+		height:100px;
+	}
+}

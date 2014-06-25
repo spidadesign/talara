@@ -1,0 +1,56 @@
+.main{
+	@include all-font(26px, $maroon, $georgia);
+	span{
+		font-weight: 600;
+		span{
+			font-size:82px;
+			float: left;
+			line-height: 60px;
+			padding-top: 4px;
+			padding-right: 4px;
+			padding-left: 3px;
+			font-weight: normal;
+		}
+		&.italics{
+			font-style: italic;
+			font-weight: normal;
+		}
+	}
+}
+.blog-home{
+	margin-top: 120px;
+	p{
+		@include all-font(14px, black, 'arial');
+	}
+	.title{
+		@include all-font(18px, #8f8d88, $georgia);
+	}
+	a{
+		&:hover{
+			p{
+				@include all-font(14px, $maroon, 'arial');
+			}
+			.date{
+				background: $maroon;
+			}
+			.ind-post{
+				border-top: 3px solid $burgandy;
+			}
+		}
+	}
+}
+.date{
+	@include all-font(16px, white, $georgia);
+	background: black;
+	height: 55px;
+	width: 55px;
+	padding-left: 9px;
+	padding-top: 16px;
+	border-radius: 50px;
+	&:hover{
+		background: $maroon;
+	}
+}
+.ind-post{
+	border-top: 1px solid black;
+}

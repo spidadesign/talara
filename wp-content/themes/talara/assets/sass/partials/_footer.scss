@@ -1,0 +1,15 @@
+footer{
+	height: 60px;
+	background-color: #e1ddd5;
+	border-top: 3px solid $burgandy;
+	padding-top:20px;
+	margin-top: 60px;
+	@include all-font(11px, #8f8d88, 'arial');
+	a{
+		@include all-font(11px, $maroon, 'arial');
+		text-decoration: underline;
+		&:hover{
+			@include all-font(11px, $maroon, 'arial');
+		}
+	}
+}
