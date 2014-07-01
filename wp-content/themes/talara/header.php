@@ -9,7 +9,7 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/assets/stylesheets/styles.css">
 	</head>
-	<body>
+	<body <?php body_class($class); ?>>
 		<nav class="navbar" role="navigation">
 			<div class="container"><!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -25,7 +25,7 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">About Us</a></li>
+						<li><a href="<?php echo site_url();?>/about">About Us</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Strategies</a>
 							<?php 
@@ -45,10 +45,11 @@
 				</div><!-- /.navbar-collapse -->
 			</div>
 		</nav>
-		<div class="container logo">
-			<img src="<?php bloginfo('template_directory'); ?>/assets/images/logo.png">
+		<div class="logo">
+			<div class="container">
+				<a href="<?php echo site_url(); ?>">
+					<img src="<?php bloginfo('template_directory'); ?>/assets/images/logo.png">
+				</a>
+			</div>
 		</div>
-		<div class="header-slider">
-			<div><img src="<?php bloginfo('template_directory'); ?>/assets/images/slider/slider-1.jpg" alt=""></div>
-			<div><img src="<?php bloginfo('template_directory'); ?>/assets/images/slider/slider-2.jpg" alt=""></div>
-		</div>
+		

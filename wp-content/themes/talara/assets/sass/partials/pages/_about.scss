@@ -1,0 +1,28 @@
+.page-template-page-templatesabout-php{
+	.col-md-7{
+		font-size: 16px;
+		color: #8f8d88;
+		margin-top: 55px;
+		&::first-letter{
+			font-size:82px;
+			float: left;
+			line-height: 60px;
+			padding-top: 4px;
+			padding-right: 4px;
+			padding-left: 3px;
+			font-weight: normal;
+			color: $maroon;
+		}
+		&.red{
+			color: $maroon;
+			font-size: 20px;
+			line-height: 35px;
+		}
+	}
+	.title-bar{
+		background-color: #f6f4f2;
+		color: $maroon;
+		font-size: 30px;
+		margin-bottom:30px;
+	}
+}

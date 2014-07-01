@@ -6,6 +6,7 @@ nav{
 .navbar{
 	border:none;
 	margin-bottom:0;
+	border-radius:0;
 }
 .navbar-ex1-collapse{
 	a{
@@ -27,6 +28,7 @@ nav{
 .nav{
 	.open{
 		> a{
+			background-color: $burgandy;
 			&:hover, &:focus{
 				background-color: $burgandy;
 			}
@@ -42,7 +44,34 @@ nav{
 	}
 }
 .logo{
+	border-bottom: 3px solid $burgandy;
 	img{
 		height:100px;
+	}
+}
+.navbar-nav{
+	> li{
+		> .dropdown-menu{
+			background-color: $maroon;
+			padding: 0;
+			margin-top: -1px;
+			border-radius: 0;
+		}
+	}
+}
+.navbar-right{
+	.dropdown-menu{
+		right:auto;
+	}
+}
+.dropdown-menu{
+	> li{
+		> a{
+			color:white;
+			&:hover, &:focus{
+				background-color: $burgandy;
+				color:white;
+			}
+		}
 	}
 }

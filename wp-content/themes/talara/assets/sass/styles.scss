@@ -1,7 +1,7 @@
 // customize bootstrap variables here:
-@import "bootstrap";
+@import "../../bower_components/twbs-bootstrap-sass/assets/stylesheets/bootstrap";
 //Slick Slider
-@import "../plugins/slick/slick";
+@import "../../bower_components/slick-carousel/slick/slick";
 
 //Modules and Variables
 @import "partials/base";
@@ -12,6 +12,7 @@
 
 //Pages
 @import "partials/pages/home";
+@import "partials/pages/about";
 
 
 *{font-family:$georgia;}
