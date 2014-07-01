@@ -8275,6 +8275,17 @@ button.close {
   opacity: 0.75;
 }
 
+/* line 10, ../sass/partials/_base.scss */
+.title-bar {
+  background-color: #f6f4f2;
+  color: #84070d;
+  margin-bottom: 30px;
+}
+/* line 14, ../sass/partials/_base.scss */
+.title-bar h1 {
+  font-size: 30px;
+}
+
 /* line 1, ../sass/partials/_header.scss */
 nav {
   height: 40px;
@@ -8319,13 +8330,14 @@ nav {
 /* line 46, ../sass/partials/_header.scss */
 .logo {
   border-bottom: 3px solid #51070d;
+  background-color: #f6f4f2;
 }
-/* line 48, ../sass/partials/_header.scss */
+/* line 49, ../sass/partials/_header.scss */
 .logo img {
   height: 100px;
 }
 
-/* line 54, ../sass/partials/_header.scss */
+/* line 55, ../sass/partials/_header.scss */
 .navbar-nav > li > .dropdown-menu {
   background-color: #84070d;
   padding: 0;
@@ -8333,16 +8345,16 @@ nav {
   border-radius: 0;
 }
 
-/* line 63, ../sass/partials/_header.scss */
+/* line 64, ../sass/partials/_header.scss */
 .navbar-right .dropdown-menu {
   right: auto;
 }
 
-/* line 69, ../sass/partials/_header.scss */
+/* line 70, ../sass/partials/_header.scss */
 .dropdown-menu > li > a {
   color: white;
 }
-/* line 71, ../sass/partials/_header.scss */
+/* line 72, ../sass/partials/_header.scss */
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
   background-color: #51070d;
   color: white;
@@ -8475,25 +8487,18 @@ footer a:hover {
   font-size: 20px;
   line-height: 35px;
 }
-/* line 22, ../sass/partials/pages/_about.scss */
-.page-template-page-templatesabout-php .title-bar {
-  background-color: #f6f4f2;
-  color: #84070d;
-  font-size: 30px;
-  margin-bottom: 30px;
-}
 
-/* line 18, ../sass/styles.scss */
+/* line 19, ../sass/styles.scss */
 * {
   font-family: "adobe-caslon-pro";
 }
 
-/* line 19, ../sass/styles.scss */
+/* line 20, ../sass/styles.scss */
 .container {
   max-width: 960px;
 }
 
-/* line 20, ../sass/styles.scss */
+/* line 21, ../sass/styles.scss */
 body {
   background: url(../images/map.png) no-repeat right bottom;
 }

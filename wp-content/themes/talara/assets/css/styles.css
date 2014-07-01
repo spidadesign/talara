@@ -5464,6 +5464,13 @@ button.close {
     .slick-dots li.slick-active button:before {
       opacity: 0.75; }
 
+.title-bar {
+  background-color: #f6f4f2;
+  color: #84070d;
+  margin-bottom: 30px; }
+  .title-bar h1 {
+    font-size: 30px; }
+
 nav {
   height: 40px;
   background: #84070d;
@@ -5492,7 +5499,8 @@ nav {
   height: 475px; }
 
 .logo {
-  border-bottom: 3px solid #51070d; }
+  border-bottom: 3px solid #51070d;
+  background-color: #f6f4f2; }
   .logo img {
     height: 100px; }
 
@@ -5600,11 +5608,6 @@ footer {
     color: #84070d;
     font-size: 20px;
     line-height: 35px; }
-.page-template-page-templatesabout-php .title-bar {
-  background-color: #f6f4f2;
-  color: #84070d;
-  font-size: 30px;
-  margin-bottom: 30px; }
 
 * {
   font-family: "adobe-caslon-pro"; }

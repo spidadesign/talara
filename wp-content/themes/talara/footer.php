@@ -10,9 +10,15 @@
 	</footer>
 	<script src="<?php bloginfo('template_directory'); ?>/bower_components/sprockets-modernizr/modernizr.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/assets/javascripts/jquery-1.11.1.min.js"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/bower_components/bootstrap/js/dropdown.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/bower_components/twbs-bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/bower_components/slick-carousel/slick/slick.min.js"></script>
 	<script type="text/javascript">
+	$(document).ready(function(){
+			$('.header-slider').slick({
+				fade: true
+			});
+			$('.blog-slider').slick({});
+		});
 		  (function(d) {
 		    var config = {
 		      kitId: 'xlw8cob',

@@ -13,4 +13,5 @@
 <div class="container">
 	<?php echo get_post()->post_content; ?>
 </div>
+this is a test
 <?php get_footer(); ?>
