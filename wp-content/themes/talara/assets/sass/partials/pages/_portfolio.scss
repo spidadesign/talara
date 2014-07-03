@@ -1,0 +1,31 @@
+.page-template-page-templatesportfolio-php{
+	p{
+		color: #454546;
+	}
+	h3{
+		display: inline-block;
+		color: $maroon;
+		font-size: 24px;
+	}
+	.portfolio-img{
+		img{
+			max-width:260px;
+			height: auto;
+		}
+	}
+	.individual-portfolio{
+		padding-bottom: 40px;
+		border-bottom: 1px solid #b5b1a9;
+		margin-bottom: 40px;
+	}
+	.btn-default{
+		width: 110px;
+		height: 30px;
+		border-radius: 50px;
+		float: right;
+		&:hover{
+			color: #fff;
+			background-color: $maroon;
+		}
+	}
+}

@@ -21,7 +21,7 @@
 					</button>
 
 				</div>
-			
+
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav navbar-right">
@@ -39,7 +39,7 @@
 						</li>
 						<li><a href="">Team</a></li>
 						<li><a href="<?php echo site_url();?>/news">News</a></li>
-						<li><a href="">Portfolio</a></li>
+						<li><a href="<?php echo site_url();?>/portfolio">Portfolio</a></li>
 						<li><a href="">Contact Us</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->

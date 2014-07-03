@@ -43,8 +43,9 @@
 						   					</div>
 						   				</div>
 						   			</div>
+						   				</a>
 						   		</div>
-						   	</a>
+						   
 					<?php 
 						$count++;
 						endwhile; 

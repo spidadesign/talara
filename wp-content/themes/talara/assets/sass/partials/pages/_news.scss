@@ -1,0 +1,28 @@
+.page-template-page-templatesnews-php{
+	.col-md-7{
+		margin-left: 20px;
+	}
+	.col-md-6{
+		margin-top:10px;
+		padding-left: 40px;
+		a{
+			color:#8f8d88;
+			font-size: 14px;
+			text-decoration: none;
+
+		}
+	}
+	.ind-post{
+		border:none;
+		&:hover{
+				background-color: #f6f4f2;
+				color:$maroon;
+				.date{
+					background-color: $maroon;
+				}
+			}
+	}
+	.date{
+		background-color: #dad5ca;
+	}
+}

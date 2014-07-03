@@ -1,0 +1,21 @@
+.page-template-page-templatesstrategies-php{
+	.title{
+		color: $maroon;
+		display: inline-block;
+		span{
+			text-transform: uppercase;
+		}
+	}
+	.content{
+		&::first-letter{
+			font-size:82px;
+			float: left;
+			line-height: 60px;
+			padding-top: 4px;
+			padding-right: 4px;
+			padding-left: 3px;
+			font-weight: normal;
+			color: $maroon;
+		}
+	}
+}
