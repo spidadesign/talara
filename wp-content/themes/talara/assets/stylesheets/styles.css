@@ -8390,13 +8390,10 @@ footer a:hover {
   font-size: 26px;
   color: #84070d;
   font-family: "adobe-caslon-pro";
-}
-/* line 3, ../sass/partials/pages/_home.scss */
-.main span {
   font-weight: 600;
 }
-/* line 5, ../sass/partials/pages/_home.scss */
-.main span span {
+/* line 4, ../sass/partials/pages/_home.scss */
+.main::first-letter {
   font-size: 82px;
   float: left;
   line-height: 60px;
@@ -8405,44 +8402,44 @@ footer a:hover {
   padding-left: 3px;
   font-weight: normal;
 }
-/* line 14, ../sass/partials/pages/_home.scss */
-.main span.italics {
+/* line 13, ../sass/partials/pages/_home.scss */
+.main em {
   font-style: italic;
   font-weight: normal;
 }
 
-/* line 20, ../sass/partials/pages/_home.scss */
+/* line 19, ../sass/partials/pages/_home.scss */
 .blog-home {
   margin-top: 120px;
 }
-/* line 22, ../sass/partials/pages/_home.scss */
+/* line 21, ../sass/partials/pages/_home.scss */
 .blog-home p {
   font-size: 14px;
   color: black;
   font-family: "arial";
 }
-/* line 25, ../sass/partials/pages/_home.scss */
+/* line 24, ../sass/partials/pages/_home.scss */
 .blog-home .title {
   font-size: 18px;
   color: #8f8d88;
   font-family: "adobe-caslon-pro";
 }
-/* line 30, ../sass/partials/pages/_home.scss */
+/* line 29, ../sass/partials/pages/_home.scss */
 .blog-home a:hover p {
   font-size: 14px;
   color: #84070d;
   font-family: "arial";
 }
-/* line 33, ../sass/partials/pages/_home.scss */
+/* line 32, ../sass/partials/pages/_home.scss */
 .blog-home a:hover .date {
   background: #84070d;
 }
-/* line 36, ../sass/partials/pages/_home.scss */
+/* line 35, ../sass/partials/pages/_home.scss */
 .blog-home a:hover .ind-post {
   border-top: 3px solid #51070d;
 }
 
-/* line 42, ../sass/partials/pages/_home.scss */
+/* line 41, ../sass/partials/pages/_home.scss */
 .date {
   font-size: 16px;
   color: white;
@@ -8454,12 +8451,12 @@ footer a:hover {
   padding-top: 16px;
   border-radius: 50px;
 }
-/* line 50, ../sass/partials/pages/_home.scss */
+/* line 49, ../sass/partials/pages/_home.scss */
 .date:hover {
   background: #84070d;
 }
 
-/* line 54, ../sass/partials/pages/_home.scss */
+/* line 53, ../sass/partials/pages/_home.scss */
 .ind-post {
   border-top: 1px solid black;
 }

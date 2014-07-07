@@ -9,30 +9,26 @@
 	$slider  = new WP_Query( $slider_args );
 ?>
 	<div class="header-slider">
-	<?php
-		if ( $slider->have_posts() ) : while ( $slider->have_posts() ) : $slider->the_post();
-	?>
+	<?php if ( $slider->have_posts() ) : while ( $slider->have_posts() ) : $slider->the_post();	?>
 	<div><?php echo get_the_post_thumbnail();?></div>
 	<?php
 		endwhile;
 		endif;
+		wp_reset_postdata();
 	?>
 
 	</div>
 	<div class="container">
 		<div class="col-md-7 col-sm-12 col-xs-12 main">
-			<span>
-				<span>T</span>alara Capital Management 
-			</span>
-			(“<span class="italics">Talara</span>”) is a real asset investment firm focused on the global resource and industrial sectors. Talara, through both private and public investments, takes a long-term fundamental approach with the objective of generating superior risk-adjusted returns for investors
+			<?php the_content(); ?>
 		</div>
 	</div>
 	<div class="container blog-home">
 		<div class="col-md-offset-4 col-md-8">
 			<div class="title">Latest News</div>
-			<?php 
+			<?php
 				$args = array('post_type' => 'post');
-				$loop = new WP_Query( $args ); 
+				$loop = new WP_Query( $args );
 				//echo "<pre>"; print_r($loop); echo "</pre>";
 			?>
 			<div class="blog-slider">
@@ -58,14 +54,12 @@
 						   			</div>
 						   				</a>
 						   		</div>
-						   
-					<?php 
+					<?php
 						$count++;
-						endwhile; 
+						endwhile;
+						wp_reset_postdata();
+						 else:
 					?>
-					<?php wp_reset_postdata(); ?>
-
-					<?php else:  ?>
 					<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 					<?php endif; ?>
 				</div>
