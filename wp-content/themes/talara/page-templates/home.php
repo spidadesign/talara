@@ -1,10 +1,23 @@
 <?php
 	/* Template Name: Home */
 	get_header();
+	$slider_args =  array(
+		'post_type' => 'home-slider',
+		'posts_per_page' => -1,
+		'order' => 'asc'
+		);
+	$slider  = new WP_Query( $slider_args );
 ?>
 	<div class="header-slider">
-		<div><img src="<?php bloginfo('template_directory'); ?>/assets/images/slider/slider-1.jpg" alt=""></div>
-		<div><img src="<?php bloginfo('template_directory'); ?>/assets/images/slider/slider-2.jpg" alt=""></div>
+	<?php
+		if ( $slider->have_posts() ) : while ( $slider->have_posts() ) : $slider->the_post();
+	?>
+	<div><?php echo get_the_post_thumbnail();?></div>
+	<?php
+		endwhile;
+		endif;
+	?>
+
 	</div>
 	<div class="container">
 		<div class="col-md-7 col-sm-12 col-xs-12 main">
