@@ -18,6 +18,15 @@
 				fade: true
 			});
 			$('.blog-slider').slick({});
+
+			var type = '<?php echo $type ?>';
+			if(type === 'staff'){
+				$(".staff").addClass('active');
+			}
+			else if(type === 'advisory'){
+				$(".advisory").addClass('active');
+			}
+			console.log(type);
 		});
 		  (function(d) {
 		    var config = {

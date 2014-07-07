@@ -37,7 +37,7 @@
 									); 
 								?>
 						</li>
-						<li><a href="">Team</a></li>
+						<li><a href="<?php echo site_url();?>/team">Team</a></li>
 						<li><a href="<?php echo site_url();?>/news">News</a></li>
 						<li><a href="<?php echo site_url();?>/portfolio">Portfolio</a></li>
 						<li><a href="">Contact Us</a></li>

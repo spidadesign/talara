@@ -8576,17 +8576,67 @@ footer a:hover {
   background-color: #84070d;
 }
 
-/* line 20, ../sass/styles.scss */
+/* line 1, ../sass/partials/pages/_team.scss */
+.page-template-page-templatesteam-php {
+  font-size: 16px;
+  color: #454546;
+}
+/* line 4, ../sass/partials/pages/_team.scss */
+.page-template-page-templatesteam-php .top-title {
+  display: inline-block;
+}
+/* line 7, ../sass/partials/pages/_team.scss */
+.page-template-page-templatesteam-php .title {
+  color: #84070d;
+  font-size: 20px;
+}
+/* line 10, ../sass/partials/pages/_team.scss */
+.page-template-page-templatesteam-php .title span {
+  display: block;
+  font-size: 16px;
+}
+/* line 15, ../sass/partials/pages/_team.scss */
+.page-template-page-templatesteam-php .btn {
+  height: 30px;
+  border-radius: 50px;
+}
+/* line 19, ../sass/partials/pages/_team.scss */
+.page-template-page-templatesteam-php .btn-default {
+  margin-top: 15px;
+  background-color: #dad5ca;
+  color: #fff;
+  border-color: #dad5ca;
+  font-size: 14px;
+}
+/* line 25, ../sass/partials/pages/_team.scss */
+.page-template-page-templatesteam-php .btn-default:hover {
+  background-color: #840c15;
+}
+/* line 29, ../sass/partials/pages/_team.scss */
+.page-template-page-templatesteam-php .btn-danger {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  border-color: #b5b1a9;
+  background-color: #fff;
+  color: #b5b1a9;
+  font-size: 12px;
+}
+/* line 35, ../sass/partials/pages/_team.scss */
+.page-template-page-templatesteam-php .btn-danger:hover {
+  background-color: #84070d;
+  color: #fff;
+}
+
+/* line 21, ../sass/styles.scss */
 * {
   font-family: "adobe-caslon-pro";
 }
 
-/* line 21, ../sass/styles.scss */
+/* line 22, ../sass/styles.scss */
 .container {
   max-width: 960px;
 }
 
-/* line 22, ../sass/styles.scss */
+/* line 23, ../sass/styles.scss */
 body {
   background: url(../images/map.png) no-repeat right bottom;
 }
