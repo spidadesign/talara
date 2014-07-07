@@ -15,6 +15,10 @@
 	.btn{
 		height:30px;
 		border-radius: 50px;
+		&.active{
+			box-shadow: none;
+			background-color: #840c15;
+		}
 	}
 	.btn-default{
 		margin-top:15px;

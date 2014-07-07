@@ -18,17 +18,17 @@
 				$title = explode(' ', $key);
 				if ( $count % 2 === 0 ):
 	?>
-			<div class="row">
-				<div class="col-md-5">
+			<div class="row strategy">
+				<div class="col-md-4">
 					<img class="img-responsive" src="http://placehold.it/350x350">
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-7">
 					<div class="row">
-						<div class="title col-md-5">
+						<div class="title col-md-8">
 							<span><?php echo $title[0]; ?></span>
 							<?php echo $title[1]; ?>
 						</div>
-						<button class="btn">More</button>
+						<a class="btn btn-default" href="<?php echo get_permalink(); ?>">More</a>
 					</div>
 					<div class="content">
 						<?php echo $value[0]; ?>
@@ -37,19 +37,19 @@
 			</div>
 		<?php else:	?>
 			<div class="row">
-				<div class="col-md-6 col-md-offset-1">
+				<div class="col-md-7 col-md-offset-1">
 					<div class="row">
-						<div class="title col-md-5">
+						<div class="title col-md-9">
 							<span><?php echo $title[0]; ?></span>
 							<?php echo $title[1]; ?>
 						</div>
-						<button class="btn">More</button>
+						<a class="btn btn-default" href="<?php echo get_permalink(); ?>">More</a>
 					</div>
 					<div class="content">
 						<?php echo $value[0]; ?>
 					</div>
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-4">
 					<img class="img-responsive" src="http://placehold.it/350x350">
 				</div>
 			</div>

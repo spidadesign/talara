@@ -50,7 +50,6 @@
 					</div>
 				</div>
 			</div>
-			
 			<hr>
 	<?php
 		$count++;
