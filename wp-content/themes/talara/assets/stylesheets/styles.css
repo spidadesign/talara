@@ -8448,7 +8448,7 @@ footer a:hover {
   height: 55px;
   width: 55px;
   padding-left: 9px;
-  padding-top: 16px;
+  padding-top: 20px;
   border-radius: 50px;
 }
 /* line 49, ../sass/partials/pages/_home.scss */
@@ -8485,35 +8485,35 @@ footer a:hover {
   line-height: 35px;
 }
 
-/* line 2, ../sass/partials/pages/_news.scss */
-.page-template-page-templatesnews-php .col-md-7 {
-  margin-left: 20px;
+/* line 3, ../sass/partials/pages/_news.scss */
+.page-template-page-templatesnews-php .col-md-7:first-child {
+  margin-left: 40px;
 }
-/* line 5, ../sass/partials/pages/_news.scss */
+/* line 7, ../sass/partials/pages/_news.scss */
 .page-template-page-templatesnews-php .col-md-6 {
-  margin-top: 10px;
+  padding-top: 10px;
   padding-left: 40px;
 }
-/* line 8, ../sass/partials/pages/_news.scss */
+/* line 10, ../sass/partials/pages/_news.scss */
 .page-template-page-templatesnews-php .col-md-6 a {
   color: #8f8d88;
   font-size: 14px;
   text-decoration: none;
 }
-/* line 15, ../sass/partials/pages/_news.scss */
+/* line 17, ../sass/partials/pages/_news.scss */
 .page-template-page-templatesnews-php .ind-post {
   border: none;
 }
-/* line 17, ../sass/partials/pages/_news.scss */
+/* line 19, ../sass/partials/pages/_news.scss */
 .page-template-page-templatesnews-php .ind-post:hover {
   background-color: #f6f4f2;
   color: #84070d;
 }
-/* line 20, ../sass/partials/pages/_news.scss */
+/* line 22, ../sass/partials/pages/_news.scss */
 .page-template-page-templatesnews-php .ind-post:hover .date {
   background-color: #84070d;
 }
-/* line 25, ../sass/partials/pages/_news.scss */
+/* line 27, ../sass/partials/pages/_news.scss */
 .page-template-page-templatesnews-php .date {
   background-color: #dad5ca;
 }
@@ -8652,17 +8652,82 @@ footer a:hover {
   color: #fff;
 }
 
-/* line 21, ../sass/styles.scss */
+/* line 1, ../sass/partials/pages/_single_strategies.scss */
+.single-strategy {
+  color: #8f8d88;
+}
+/* line 3, ../sass/partials/pages/_single_strategies.scss */
+.single-strategy p {
+  font-size: 16px;
+}
+/* line 5, ../sass/partials/pages/_single_strategies.scss */
+.single-strategy p::first-letter {
+  font-size: 31px;
+  float: left;
+  padding-right: 4px;
+  padding-left: 3px;
+  font-weight: normal;
+}
+/* line 14, ../sass/partials/pages/_single_strategies.scss */
+.single-strategy .content .row {
+  padding-top: 35px;
+  padding-bottom: 70px;
+  border-top: 1px solid #f6f4f2;
+  border-bottom: 1px solid #f6f4f2;
+}
+/* line 19, ../sass/partials/pages/_single_strategies.scss */
+.single-strategy .content .row.title-row {
+  padding: 0;
+  border: none;
+}
+/* line 22, ../sass/partials/pages/_single_strategies.scss */
+.single-strategy .content .row.title-row .title {
+  color: #84070d;
+  font-size: 24px;
+}
+/* line 29, ../sass/partials/pages/_single_strategies.scss */
+.single-strategy .btn-default {
+  color: #8f8d88;
+  border-color: #8f8d88;
+  font-size: 12px;
+  border-radius: 50px;
+  height: 30px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+/* line 36, ../sass/partials/pages/_single_strategies.scss */
+.single-strategy .btn-default:hover {
+  background-color: #84070d;
+  color: #fff;
+}
+
+/* line 2, ../sass/partials/pages/_contact.scss */
+.page-template-page-templatescontact-php span {
+  display: block;
+  color: #8f8d88;
+  font-size: 16px;
+}
+/* line 7, ../sass/partials/pages/_contact.scss */
+.page-template-page-templatescontact-php h3 {
+  color: #84070d;
+  font-size: 16px;
+}
+/* line 11, ../sass/partials/pages/_contact.scss */
+.page-template-page-templatescontact-php h2 {
+  color: #84070d;
+  font-size: 24px;
+}
+
+/* line 23, ../sass/styles.scss */
 * {
   font-family: "adobe-caslon-pro";
 }
 
-/* line 22, ../sass/styles.scss */
+/* line 24, ../sass/styles.scss */
 .container {
   max-width: 960px;
 }
 
-/* line 23, ../sass/styles.scss */
+/* line 25, ../sass/styles.scss */
 body {
   background: url(../images/map.png) no-repeat right bottom;
 }

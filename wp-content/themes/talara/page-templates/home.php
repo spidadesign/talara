@@ -26,11 +26,7 @@
 	<div class="container blog-home">
 		<div class="col-md-offset-4 col-md-8">
 			<div class="title">Latest News</div>
-			<?php
-				$args = array('post_type' => 'post');
-				$loop = new WP_Query( $args );
-				//echo "<pre>"; print_r($loop); echo "</pre>";
-			?>
+			<?php $loop = new WP_Query( array('post_type' => 'post') );	?>
 			<div class="blog-slider">
 				<div>
 					<?php 

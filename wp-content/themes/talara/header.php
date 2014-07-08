@@ -40,7 +40,7 @@
 						<li><a href="<?php echo site_url();?>/team">Team</a></li>
 						<li><a href="<?php echo site_url();?>/news">News</a></li>
 						<li><a href="<?php echo site_url();?>/portfolio">Portfolio</a></li>
-						<li><a href="">Contact Us</a></li>
+						<li><a href="<?php echo site_url();?>/contact">Contact Us</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div>

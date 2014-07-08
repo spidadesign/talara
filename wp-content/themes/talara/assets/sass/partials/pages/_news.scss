@@ -1,9 +1,11 @@
 .page-template-page-templatesnews-php{
 	.col-md-7{
-		margin-left: 20px;
+		&:first-child{
+			margin-left: 40px;
+		}
 	}
 	.col-md-6{
-		margin-top:10px;
+		padding-top:10px;
 		padding-left: 40px;
 		a{
 			color:#8f8d88;
