@@ -1,2 +1,3 @@
 !.gitignore
 !wp-content/
+.DS_Store
