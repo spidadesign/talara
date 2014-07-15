@@ -25,7 +25,7 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="<?php echo site_url();?>/about">About Us</a></li>
+						<li><a href="<?php echo site_url();?>/our-company">Our Company</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Strategies</a>
 							<?php 
