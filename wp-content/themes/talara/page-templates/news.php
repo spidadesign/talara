@@ -59,7 +59,7 @@
 				endif;
 	?>
 			<div class="col-md-6 ind-post">
-			   		<a href="<?php echo $guid; ?>">
+			   		<a href="<?php echo $guid; ?>" target="_blank">
 			   			<div class="row">
 			   				<div class="date">
 			   					<?php echo $date; ?>
