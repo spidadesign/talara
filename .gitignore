@@ -35,5 +35,5 @@ xmlrpc.php
 !wp-content/plugins/*
 !wp-content/themes/*
 wp-content/uploads/
-wp-content/themes/talara/assets/.sass-cach
+wp-content/themes/talara/assets/.sass-cache
 wp-content/themes/talara/assets/sass/.sass-cache
