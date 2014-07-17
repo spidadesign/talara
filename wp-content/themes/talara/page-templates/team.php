@@ -32,7 +32,8 @@
 			$count = 0;
 			while ( $loop->have_posts() ) :
 				$loop->the_post();
-				$custom = get_post_custom( );
+				$custom = get_post_custom();
+				$content = explode(' ', apply_filters( 'the_content', get_the_content()));
 			?>
 			<div class="row">
 				<div class="col-md-3">
@@ -46,10 +47,20 @@
 						</div>
 					</div>
 					<div class="row">
-						<?php the_excerpt(); ?>
+						<?php 
+							$wordCounter = 0;
+							foreach($content as $words):
+								echo $words.' ';
+								$wordCounter++;
+								if($wordCounter == 25):
+									echo '<div class="full-about collapse" id="team'.$count.'">';
+								endif;
+							endforeach;
+						?>
+						</div>
 					</div>
 					<div class="row">
-						<button class="more btn btn-danger" type="button">More</button>
+						<button class="more btn btn-danger" type="button" data-toggle="collapse" data-target="#team<?php echo $count; ?>">More</button>
 					</div>
 				</div>
 			</div>

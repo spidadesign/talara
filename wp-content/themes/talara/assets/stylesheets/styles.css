@@ -8684,6 +8684,11 @@ footer a:hover {
   color: #fff;
 }
 
+/* line 45, ../sass/partials/pages/_team.scss */
+.collapse.in {
+  display: inline;
+}
+
 /* line 2, ../sass/partials/pages/_single_strategies.scss */
 .single-strategy .row {
   margin: auto;
