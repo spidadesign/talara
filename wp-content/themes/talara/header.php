@@ -27,7 +27,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="<?php echo site_url();?>/our-company">Our Company</a></li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Strategies</a>
+							<a href="<?php echo site_url();?>/strategies" class="dropdown-toggle" data-toggle="dropdown">Strategies</a>
 							<?php 
 								wp_nav_menu(
 									array(

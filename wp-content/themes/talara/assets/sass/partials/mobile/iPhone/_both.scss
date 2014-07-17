@@ -1,0 +1,47 @@
+//General
+body{
+	background: none;
+	
+}
+/*-------- Start Home ----------*/
+//Slider
+.home-slider{
+	.slick-slide{
+		img{
+			height:auto;
+		}
+	}
+}
+/*-------- End Home ----------*/
+
+/*-------- Start Team ----------*/
+.member{
+	padding-left: 27px;
+}
+.team-img{
+	text-align: center;
+}
+/*-------- End Team ----------*/
+
+/*-------- Start Single Strategy ----------*/
+.single-strategy{
+	.content{
+		img{
+			display:none;
+		}
+		.col-md-8{
+			padding-top: 0;
+		}
+	}
+}
+/*-------- End Single Strategy ----------*/
+
+/*-------- Start About Us ----------*/
+.page-template-page-templatesabout-php{
+	.col-md-4{
+		img{
+			display: none;
+		}
+	}
+}
+/*-------- End About Us ----------*/

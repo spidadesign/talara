@@ -32,6 +32,7 @@
 			}
 			console.log(type);
 		});
+		$('.single-strategy img.size-medium').addClass('img-responsive');
 		  (function(d) {
 		    var config = {
 		      kitId: 'xlw8cob',

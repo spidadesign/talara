@@ -36,10 +36,10 @@
 				$content = explode(' ', apply_filters( 'the_content', get_the_content()));
 			?>
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-3 col-xs-12 team-img">
 					<?php echo get_the_post_thumbnail();?>
 				</div>
-				<div class="col-md-6 col-md-offset-1">
+				<div class="col-md-8 col-md-offset-1 col-xs-offset-0 col-xs-col-12 member">
 					<div class="row">
 						<div class="title">
 							<?php the_title(); ?>
@@ -52,7 +52,7 @@
 							foreach($content as $words):
 								echo $words.' ';
 								$wordCounter++;
-								if($wordCounter == 25):
+								if($wordCounter == 60):
 									echo '<div class="full-about collapse" id="team'.$count.'">';
 								endif;
 							endforeach;

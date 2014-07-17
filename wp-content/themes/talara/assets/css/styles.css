@@ -5530,6 +5530,9 @@ nav {
     background-color: #51070d;
     color: white; }
 
+.dropdown:hover .dropdown-menu {
+  display: block; }
+
 footer {
   position: absolute;
   bottom: 0;
@@ -5710,7 +5713,8 @@ footer {
     font-size: 20px; }
     .page-template-page-templatesteam-php .title span {
       display: block;
-      font-size: 16px; }
+      font-size: 16px;
+      margin-bottom: 10px; }
   .page-template-page-templatesteam-php .btn {
     height: 30px;
     border-radius: 50px; }
@@ -5741,6 +5745,9 @@ footer {
 .collapse.in {
   display: inline; }
 
+.member p:first-child {
+  display: inline; }
+
 .single-strategy .row {
   margin: auto; }
 .single-strategy .content {
@@ -5749,6 +5756,8 @@ footer {
   margin-top: 40px; }
   .single-strategy .content .line {
     padding-top: 10px; }
+.single-strategy .col-md-8 {
+  padding-top: 50px; }
 
 .page-template-page-templatescontact-php span {
   display: block;
@@ -5761,9 +5770,35 @@ footer {
   color: #84070d;
   font-size: 24px; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
-  img.size-medium {
-    display: none; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  body {
+    background: none; }
+
+  /*-------- Start Home ----------*/
+  .home-slider .slick-slide img {
+    height: auto; }
+
+  /*-------- End Home ----------*/
+  /*-------- Start Team ----------*/
+  .member {
+    padding-left: 27px; }
+
+  .team-img {
+    text-align: center; }
+
+  /*-------- End Team ----------*/
+  /*-------- Start Single Strategy ----------*/
+  .single-strategy .content img {
+    display: none; }
+  .single-strategy .content .col-md-8 {
+    padding-top: 0; }
+
+  /*-------- End Single Strategy ----------*/
+  /*-------- Start About Us ----------*/
+  .page-template-page-templatesabout-php .col-md-4 img {
+    display: none; }
+
+  /*-------- End About Us ----------*/ }
 * {
   font-family: "adobe-caslon-pro"; }
 
@@ -5781,3 +5816,6 @@ html {
 body {
   background: url(../images/map.png) no-repeat right bottom;
   margin-bottom: 60px; }
+
+*:focus {
+  outline: none; }

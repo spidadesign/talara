@@ -1,7 +1,5 @@
 //iPhone 5 All
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
-	@import "iPhone/both"
-}
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {@import "iPhone/both"}
 //iPhone 5 in landscape
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {@import "iPhone/landscape"}
 

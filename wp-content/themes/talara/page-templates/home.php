@@ -10,7 +10,7 @@
 ?>
 	<div class="header-slider">
 	<?php if ( $slider->have_posts() ) : while ( $slider->have_posts() ) : $slider->the_post();	?>
-	<div><?php echo get_the_post_thumbnail();?></div>
+	<div class="slider-img"><?php echo get_the_post_thumbnail();?></div>
 	<?php
 		endwhile;
 		endif;

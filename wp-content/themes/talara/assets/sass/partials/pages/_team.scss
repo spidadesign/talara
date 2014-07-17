@@ -10,6 +10,7 @@
 		span{
 			display:block;
 			font-size: 16px;
+			margin-bottom: 10px;
 		}
 	}
 	.btn{
@@ -27,6 +28,7 @@
 		color: #fff;
 		border-color:#dad5ca;
 		font-size: 14px;
+		// padding-top: 4px;
 		&:hover{
 			background-color: $maroon;
 			border-color: $maroon;
@@ -47,4 +49,11 @@
 }
 .collapse.in{
 	display:inline;
+}
+.member{
+	p{
+		&:first-child{
+			display: inline;
+		}
+	}
 }
