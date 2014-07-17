@@ -2,10 +2,10 @@
 	@include all-font(22px, $maroon, $georgia);
 	font-weight: 600;
 	&::first-letter{
-		font-size:82px;
+		font-size:80px;
 		float: left;	
-		line-height: 60px;
-		padding-top: 4px;
+		line-height: 50px;
+		padding-top: 12px;
 		padding-right: 4px;
 		padding-left: 3px;
 		font-weight: normal;

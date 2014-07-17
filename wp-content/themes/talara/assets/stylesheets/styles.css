@@ -8418,10 +8418,10 @@ footer a:hover {
 }
 /* line 4, ../sass/partials/pages/_home.scss */
 .main::first-letter {
-  font-size: 82px;
+  font-size: 80px;
   float: left;
-  line-height: 60px;
-  padding-top: 4px;
+  line-height: 50px;
+  padding-top: 12px;
   padding-right: 4px;
   padding-left: 3px;
   font-weight: normal;
@@ -8656,9 +8656,10 @@ footer a:hover {
 /* line 18, ../sass/partials/pages/_team.scss */
 .page-template-page-templatesteam-php .btn.active {
   box-shadow: none;
-  background-color: #840c15;
+  background-color: #84070d;
+  border-color: #84070d;
 }
-/* line 23, ../sass/partials/pages/_team.scss */
+/* line 24, ../sass/partials/pages/_team.scss */
 .page-template-page-templatesteam-php .btn-default {
   margin-top: 15px;
   background-color: #dad5ca;
@@ -8666,11 +8667,12 @@ footer a:hover {
   border-color: #dad5ca;
   font-size: 14px;
 }
-/* line 29, ../sass/partials/pages/_team.scss */
+/* line 30, ../sass/partials/pages/_team.scss */
 .page-template-page-templatesteam-php .btn-default:hover {
-  background-color: #840c15;
+  background-color: #84070d;
+  border-color: #84070d;
 }
-/* line 33, ../sass/partials/pages/_team.scss */
+/* line 35, ../sass/partials/pages/_team.scss */
 .page-template-page-templatesteam-php .btn-danger {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   border-color: #b5b1a9;
@@ -8678,13 +8680,14 @@ footer a:hover {
   color: #b5b1a9;
   font-size: 12px;
 }
-/* line 39, ../sass/partials/pages/_team.scss */
+/* line 41, ../sass/partials/pages/_team.scss */
 .page-template-page-templatesteam-php .btn-danger:hover {
   background-color: #84070d;
+  border-color: #84070d;
   color: #fff;
 }
 
-/* line 45, ../sass/partials/pages/_team.scss */
+/* line 48, ../sass/partials/pages/_team.scss */
 .collapse.in {
   display: inline;
 }

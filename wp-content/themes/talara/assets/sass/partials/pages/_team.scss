@@ -17,7 +17,8 @@
 		border-radius: 50px;
 		&.active{
 			box-shadow: none;
-			background-color: #840c15;
+			background-color: $maroon;
+			border-color: $maroon;
 		}
 	}
 	.btn-default{
@@ -27,7 +28,8 @@
 		border-color:#dad5ca;
 		font-size: 14px;
 		&:hover{
-			background-color: #840c15;
+			background-color: $maroon;
+			border-color: $maroon;
 		}
 	}
 	.btn-danger{
@@ -38,6 +40,7 @@
 		font-size: 12px;
 		&:hover{
 			background-color: $maroon;
+			border-color: $maroon;
 			color:#fff;
 		}
 	}

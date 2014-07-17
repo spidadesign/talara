@@ -5558,10 +5558,10 @@ footer {
   font-family: "adobe-caslon-pro";
   font-weight: 600; }
   .main::first-letter {
-    font-size: 82px;
+    font-size: 80px;
     float: left;
-    line-height: 60px;
-    padding-top: 4px;
+    line-height: 50px;
+    padding-top: 12px;
     padding-right: 4px;
     padding-left: 3px;
     font-weight: normal; }
@@ -5716,7 +5716,8 @@ footer {
     border-radius: 50px; }
     .page-template-page-templatesteam-php .btn.active {
       box-shadow: none;
-      background-color: #840c15; }
+      background-color: #84070d;
+      border-color: #84070d; }
   .page-template-page-templatesteam-php .btn-default {
     margin-top: 15px;
     background-color: #dad5ca;
@@ -5724,7 +5725,8 @@ footer {
     border-color: #dad5ca;
     font-size: 14px; }
     .page-template-page-templatesteam-php .btn-default:hover {
-      background-color: #840c15; }
+      background-color: #84070d;
+      border-color: #84070d; }
   .page-template-page-templatesteam-php .btn-danger {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     border-color: #b5b1a9;
@@ -5733,7 +5735,11 @@ footer {
     font-size: 12px; }
     .page-template-page-templatesteam-php .btn-danger:hover {
       background-color: #84070d;
+      border-color: #84070d;
       color: #fff; }
+
+.collapse.in {
+  display: inline; }
 
 .single-strategy .row {
   margin: auto; }
