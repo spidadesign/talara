@@ -1,0 +1,17 @@
+//top slider
+.slick-dots{
+	bottom:0px;
+	li{
+		background: url(../images/slider/pager.png) center center no-repeat;
+		//background-repeat: ;
+		&.slick-active{
+			background: url(../images/slider/pager-active.png) center center no-repeat;
+		}
+		button{
+			&:before{
+				content: initial;
+			}
+		}
+	}
+}
+//news slider

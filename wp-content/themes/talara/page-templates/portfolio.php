@@ -31,7 +31,9 @@
 				<div class="col-md-8">
 					<div class="row">
 						<h3><?php the_title( ); ?></h3>
-						<a class="btn btn-default" href="<?php echo $custom['site_url'][0];?>" target="_blank">Visit Website</a>
+						<?php if($custom['site_url'][0]): ?>
+							<a class="btn btn-default" href="<?php echo $custom['site_url'][0];?>" target="_blank">Visit Website</a>
+						<?php endif; ?>
 					</div>
 					<div class="row">
 						<?php the_content(); ?>

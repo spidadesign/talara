@@ -1,9 +1,9 @@
 .main{
-	@include all-font(26px, $maroon, $georgia);
+	@include all-font(22px, $maroon, $georgia);
 	font-weight: 600;
 	&::first-letter{
 		font-size:82px;
-		float: left;
+		float: left;	
 		line-height: 60px;
 		padding-top: 4px;
 		padding-right: 4px;
@@ -33,6 +33,7 @@
 				background: $maroon;
 			}
 			.ind-post{
+				
 				border-top: 3px solid $burgandy;
 			}
 		}
@@ -52,4 +53,5 @@
 }
 .ind-post{
 	border-top: 1px solid black;
+	padding-top: 10px;
 }

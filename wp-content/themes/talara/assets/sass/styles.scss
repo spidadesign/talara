@@ -20,8 +20,14 @@
 @import "partials/pages/single_strategies";
 @import "partials/pages/contact";
 
+//Mobile
+@import "partials/mobile/all";
+
+
 *{font-family:$georgia;}
 .container{max-width:960px;}
-body{
-	background: url(../images/map.png) no-repeat right bottom;
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
 }
+body{background: url(../images/map.png) no-repeat right bottom;}

@@ -21,44 +21,58 @@
 	$other_strategy = implode(' ', $other_strategy);
 	$other_strategy = ucwords(strtolower($other_strategy));
 
-	//echo "<pre>"; print_r($loop); echo "</pre>";
-?>
-
-	<div class="header-slider">
-		<div><img src="<?php bloginfo('template_directory'); ?>/assets/images/slider/slider-1.jpg" alt=""></div>
-		<div><img src="<?php bloginfo('template_directory'); ?>/assets/images/slider/slider-2.jpg" alt=""></div>
-	</div>
-	<?php 
 		if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
-		$custom = get_post_custom();
-	?>
+			$custom = get_post_custom();
+			
+		?>
 		<div class="container content">
-			<div class="row title-row">
-				<div class="title col-md-3">
-					<?php echo $custom['title'][0]; ?>
-				</div>
-				<div class="pull-right">
-					<a class="btn btn-default" href="#">Check out our Portfolio</a>
-					<a href="<?php echo site_url(); ?>/strategies/<?php echo $other_post_name; ?>" class="btn btn-default">Check out our <?php echo $other_strategy; ?></a>
-				</div>
-			</div>
 			<div class="row">
-			<?php 
-				$content = explode('</p>', str_replace( ']]>', ']]&gt;', apply_filters( 'the_content', get_the_content() ) )); 
-				//echo "<pre>"; print_r($content); echo "</pre>";
-				foreach($content as $c):
-					if($count % 3 === 0):
-				?>
-					</div><div class="row">
+				<?php 
+					$count = 0;
+					$content = get_the_content(); 
+					$content = explode('</p>', str_replace( ']]>', ']]&gt;', apply_filters( 'the_content', get_the_content() ) )); 
+					//echo "<pre>"; print_r($content); echo "</pre>";
+					foreach($content as $c):
+						if($count % 3 === 0 && $count !== 0):
+					?>
+						</div>
+						<div class="row">
+					<?php endif; ?>
+				<?php if($count === 0 || $count === 6): ?>
+					<div class="row line">
+						<div class="col-md-4 fl">
+							<?php echo $c; ?>
+						</div>
+				<?php elseif( $count === 1 || $count === 2 || $count === 7 || $count === 8): ?>
+					<div class="col-md-7 fr">
+						<?php echo $c; ?>
+					</div>
+					<?php if($count === 2 || $count === 8): ?>
+						</div>
+					<?php  endif; ?>
+				<?php elseif($count === 3 || $count === 4 || $count === 9 || $count === 10): ?>
+					<div class="row line">
+						<div class="col-md-7 fl">
+							<?php echo $c; ?>
+						</div>
+				<?php elseif($count === 5 || $count === 11): ?>
+					
+						<div class="col-md-4 fr">
+							<?php echo $c; ?>
+						</div>
+						</div>
 				<?php endif; ?>
-				<div class="col-md-4">
-					<?php echo $c ?> </p>
-				</div>
 				<?php
 					$count++;
-					endforeach;
+					endforeach; 
 				?>
 			</div>
 		</div>
-	<?php endwhile; endif; wp_reset_postdata(); ?>
-<?php get_footer(); ?>
+		</div>
+		</div>
+	<?php 
+		endwhile; 
+		endif; 
+		wp_reset_postdata(); 
+		get_footer(); 
+	?>

@@ -15,8 +15,10 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 			$('.header-slider').slick({
-				fade: true
+				fade: true,
+				dots: true,
 			});
+			$('.header-slider .slick-dots').addClass('container');
 			$('.blog-slider').slick({});
 
 			var type = '<?php echo $type ?>';

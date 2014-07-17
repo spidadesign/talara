@@ -19,7 +19,7 @@
 
 	</div>
 	<div class="container">
-		<div class="col-md-7 col-sm-12 col-xs-12 main">
+		<div class="col-md-8 col-sm-12 col-xs-12 main">
 			<?php the_content(); ?>
 		</div>
 	</div>

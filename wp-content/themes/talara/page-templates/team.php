@@ -1,8 +1,11 @@
 <?php
 	/* Template Name: Team */
 	get_header();
-	$type = 'staff';
-	$type = $wp_query->query_vars['type'];
+	if(!$wp_query->query_vars['type']):
+		$type = 'staff';
+	else:
+		$type = $wp_query->query_vars['type'];
+	endif;
 
 	$args = array(
 		'post_type' => $type,

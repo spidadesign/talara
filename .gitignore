@@ -1,20 +1,23 @@
 .DS_Store
-wp-config.php
+.htaccess
+
+
 wp-admin/*
-.htaccess
-.htaccess
+wp-includes/*
 sitemap.xml
 *.log
 sitemap.xml
 sitemap.xml.gz
-.DS_Store
-wp-includes/*
+
+
 license.txt
-index.php
 readme.html
+config.codekit
+
+index.php
+wp-config.php
 wp-activate.php
 wp-blog-header.php
-config.codekit
 wp-comments-post.php
 wp-config-sample.php
 wp-cron.php
@@ -26,3 +29,9 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
+
+# Ignore everything in the "wp-content" directory, except the "plugins"
+# and "themes" directories.
+!wp-content/plugins/*
+!wp-content/themes/*
+wp-content/uploads/

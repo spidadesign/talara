@@ -5464,6 +5464,15 @@ button.close {
     .slick-dots li.slick-active button:before {
       opacity: 0.75; }
 
+.slick-dots {
+  bottom: 0px; }
+  .slick-dots li {
+    background: url(../images/slider/pager.png) center center no-repeat; }
+    .slick-dots li.slick-active {
+      background: url(../images/slider/pager-active.png) center center no-repeat; }
+    .slick-dots li button:before {
+      content: initial; }
+
 .title-bar {
   background-color: #f6f4f2;
   color: #84070d;
@@ -5494,9 +5503,11 @@ nav {
   .nav .open > a:hover, .nav .open > a:focus {
     background-color: #51070d; }
 
-.header-slider .slick-slide img {
-  width: 100%;
-  height: 475px; }
+.header-slider {
+  border-bottom: 3px solid #51070d; }
+  .header-slider .slick-slide img {
+    width: 100%;
+    height: 475px; }
 
 .logo {
   border-bottom: 3px solid #51070d;
@@ -5539,22 +5550,21 @@ footer {
       font-family: "arial"; }
 
 .main {
-  font-size: 26px;
+  font-size: 22px;
   color: #84070d;
-  font-family: "adobe-caslon-pro"; }
-  .main span {
-    font-weight: 600; }
-    .main span span {
-      font-size: 82px;
-      float: left;
-      line-height: 60px;
-      padding-top: 4px;
-      padding-right: 4px;
-      padding-left: 3px;
-      font-weight: normal; }
-    .main span.italics {
-      font-style: italic;
-      font-weight: normal; }
+  font-family: "adobe-caslon-pro";
+  font-weight: 600; }
+  .main::first-letter {
+    font-size: 82px;
+    float: left;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-left: 3px;
+    font-weight: normal; }
+  .main em {
+    font-style: italic;
+    font-weight: normal; }
 
 .blog-home {
   margin-top: 120px; }
@@ -5583,13 +5593,14 @@ footer {
   height: 55px;
   width: 55px;
   padding-left: 9px;
-  padding-top: 16px;
+  padding-top: 20px;
   border-radius: 50px; }
   .date:hover {
     background: #84070d; }
 
 .ind-post {
-  border-top: 1px solid black; }
+  border-top: 1px solid black;
+  padding-top: 10px; }
 
 .page-template-page-templatesabout-php .col-md-7 {
   font-size: 16px;
@@ -5609,10 +5620,10 @@ footer {
     font-size: 20px;
     line-height: 35px; }
 
-.page-template-page-templatesnews-php .col-md-7 {
-  margin-left: 20px; }
+.page-template-page-templatesnews-php .col-md-7:first-child {
+  margin-left: 40px; }
 .page-template-page-templatesnews-php .col-md-6 {
-  margin-top: 10px;
+  padding-top: 10px;
   padding-left: 40px; }
   .page-template-page-templatesnews-php .col-md-6 a {
     color: #8f8d88;
@@ -5630,27 +5641,43 @@ footer {
 
 .page-template-page-templatesstrategies-php .title {
   color: #84070d;
-  display: inline-block; }
+  display: inline-block;
+  font-size: 30px; }
   .page-template-page-templatesstrategies-php .title span {
     text-transform: uppercase; }
-.page-template-page-templatesstrategies-php .content::first-letter {
-  font-size: 82px;
-  float: left;
-  line-height: 60px;
-  padding-top: 4px;
-  padding-right: 4px;
-  padding-left: 3px;
-  font-weight: normal;
-  color: #84070d; }
+.page-template-page-templatesstrategies-php .content {
+  color: #8f8d88;
+  font-size: 20px; }
+  .page-template-page-templatesstrategies-php .content::first-letter {
+    font-size: 64px;
+    float: left;
+    line-height: 25px;
+    padding-top: 30px;
+    padding-right: 4px;
+    padding-left: 3px;
+    font-weight: normal; }
+.page-template-page-templatesstrategies-php .btn-default {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  border-color: #b5b1a9;
+  background-color: #fff;
+  color: #b5b1a9;
+  font-size: 12px;
+  border-radius: 50px; }
+  .page-template-page-templatesstrategies-php .btn-default:hover {
+    background-color: #84070d;
+    color: #fff; }
+
+.strategy {
+  margin-bottom: 80px; }
 
 .page-template-page-templatesportfolio-php p {
   color: #454546; }
 .page-template-page-templatesportfolio-php h3 {
   display: inline-block;
   color: #84070d;
-  font-size: 24px; }
+  font-size: 20px; }
 .page-template-page-templatesportfolio-php .portfolio-img img {
-  max-width: 260px;
+  max-width: 230px;
   height: auto; }
 .page-template-page-templatesportfolio-php .individual-portfolio {
   padding-bottom: 40px;
@@ -5665,11 +5692,73 @@ footer {
     color: #fff;
     background-color: #84070d; }
 
+.page-template-page-templatesteam-php {
+  font-size: 16px;
+  color: #454546; }
+  .page-template-page-templatesteam-php .top-title {
+    display: inline-block; }
+  .page-template-page-templatesteam-php .title {
+    color: #84070d;
+    font-size: 20px; }
+    .page-template-page-templatesteam-php .title span {
+      display: block;
+      font-size: 16px; }
+  .page-template-page-templatesteam-php .btn {
+    height: 30px;
+    border-radius: 50px; }
+    .page-template-page-templatesteam-php .btn.active {
+      box-shadow: none;
+      background-color: #840c15; }
+  .page-template-page-templatesteam-php .btn-default {
+    margin-top: 15px;
+    background-color: #dad5ca;
+    color: #fff;
+    border-color: #dad5ca;
+    font-size: 14px; }
+    .page-template-page-templatesteam-php .btn-default:hover {
+      background-color: #840c15; }
+  .page-template-page-templatesteam-php .btn-danger {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    border-color: #b5b1a9;
+    background-color: #fff;
+    color: #b5b1a9;
+    font-size: 12px; }
+    .page-template-page-templatesteam-php .btn-danger:hover {
+      background-color: #84070d;
+      color: #fff; }
+
+.single-strategy .row {
+  margin: auto; }
+.single-strategy .content {
+  color: #8f8d88;
+  font-size: 20px;
+  margin-top: 40px; }
+  .single-strategy .content .line {
+    padding-top: 10px; }
+
+.page-template-page-templatescontact-php span {
+  display: block;
+  color: #8f8d88;
+  font-size: 16px; }
+.page-template-page-templatescontact-php h3 {
+  color: #84070d;
+  font-size: 16px; }
+.page-template-page-templatescontact-php h2 {
+  color: #84070d;
+  font-size: 24px; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  img.size-medium {
+    display: none; } }
 * {
   font-family: "adobe-caslon-pro"; }
 
 .container {
   max-width: 960px; }
+
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important; }
 
 body {
   background: url(../images/map.png) no-repeat right bottom; }
