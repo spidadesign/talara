@@ -8065,7 +8065,7 @@ button.close {
 }
 /* line 60, ../../bower_components/slick-carousel/slick/slick.scss */
 .slick-loading .slick-list {
-  background: white url('/images/ajax-loader.gif') center center no-repeat;
+  background: white url('/images/ajax-loader.gif?1399425036') center center no-repeat;
 }
 /* line 64, ../../bower_components/slick-carousel/slick/slick.scss */
 .slick-list.dragging {
@@ -8383,6 +8383,9 @@ nav {
 
 /* line 1, ../sass/partials/_footer.scss */
 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   height: 60px;
   background-color: #e1ddd5;
   border-top: 3px solid #51070d;
@@ -8392,14 +8395,14 @@ footer {
   color: #8f8d88;
   font-family: "arial";
 }
-/* line 8, ../sass/partials/_footer.scss */
+/* line 11, ../sass/partials/_footer.scss */
 footer a {
   font-size: 11px;
   color: #84070d;
   font-family: "arial";
   text-decoration: underline;
 }
-/* line 11, ../sass/partials/_footer.scss */
+/* line 14, ../sass/partials/_footer.scss */
 footer a:hover {
   font-size: 11px;
   color: #84070d;
@@ -8438,29 +8441,31 @@ footer a:hover {
   font-size: 14px;
   color: black;
   font-family: "arial";
+  margin-top: 10px;
 }
-/* line 24, ../sass/partials/pages/_home.scss */
+/* line 25, ../sass/partials/pages/_home.scss */
 .blog-home .title {
   font-size: 18px;
   color: #8f8d88;
   font-family: "adobe-caslon-pro";
 }
-/* line 29, ../sass/partials/pages/_home.scss */
+/* line 30, ../sass/partials/pages/_home.scss */
 .blog-home a:hover p {
   font-size: 14px;
   color: #84070d;
   font-family: "arial";
+  margin-top: 10px;
 }
-/* line 32, ../sass/partials/pages/_home.scss */
+/* line 34, ../sass/partials/pages/_home.scss */
 .blog-home a:hover .date {
   background: #84070d;
 }
-/* line 35, ../sass/partials/pages/_home.scss */
+/* line 37, ../sass/partials/pages/_home.scss */
 .blog-home a:hover .ind-post {
   border-top: 3px solid #51070d;
 }
 
-/* line 42, ../sass/partials/pages/_home.scss */
+/* line 44, ../sass/partials/pages/_home.scss */
 .date {
   font-size: 16px;
   color: white;
@@ -8472,15 +8477,20 @@ footer a:hover {
   padding-top: 20px;
   border-radius: 50px;
 }
-/* line 50, ../sass/partials/pages/_home.scss */
+/* line 52, ../sass/partials/pages/_home.scss */
 .date:hover {
   background: #84070d;
+  text-decoration: none;
 }
 
-/* line 54, ../sass/partials/pages/_home.scss */
+/* line 58, ../sass/partials/pages/_home.scss */
 .ind-post {
   border-top: 1px solid black;
   padding-top: 10px;
+}
+/* line 61, ../sass/partials/pages/_home.scss */
+.ind-post:hover {
+  text-decoration: none;
 }
 
 /* line 2, ../sass/partials/pages/_about.scss */
@@ -8729,6 +8739,13 @@ html, body {
 }
 
 /* line 33, ../sass/styles.scss */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 37, ../sass/styles.scss */
 body {
   background: url(../images/map.png) no-repeat right bottom;
+  margin-bottom: 60px;
 }

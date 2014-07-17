@@ -19,6 +19,18 @@
 		if ( $the_query->have_posts() ) :
 			while ( $the_query->have_posts() ) :
 				$the_query->the_post();
+				$custom = get_post_custom(get_the_ID());
+				$pdf = get_attached_media();
+				$date = get_the_date('m/d');
+				if($pdf):
+					foreach ($pdf as $p):
+						if($p->post_mime_type === 'application/pdf'):
+							$guid = $p->guid;
+						endif;
+					endforeach;
+				elseif($custom):
+					$guid = $custom['site_url'][0]; 
+				endif;
 				if ( $count !== 0 ) :
 					//close the row content row
 					if ( ($count % 2 === 0) and ($count % 4 !== 0) ) :
@@ -47,14 +59,14 @@
 				endif;
 	?>
 			<div class="col-md-6 ind-post">
-			   		<a href="<?php the_permalink(); ?>">
+			   		<a href="<?php echo $guid; ?>">
 			   			<div class="row">
 			   				<div class="date">
-			   					<?php the_date('m/d'); ?>
+			   					<?php echo $date; ?>
 			   				</div>
 			   				<div class="row">
 			   					<div class="col-md-10">
-			   						 <?php the_excerpt(); ?>
+			   						 <p><?php the_title(); ?></p>
 			   					</div>
 			   				</div>
 			   			</div>

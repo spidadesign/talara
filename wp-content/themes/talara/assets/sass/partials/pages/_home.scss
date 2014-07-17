@@ -20,6 +20,7 @@
 	margin-top: 120px;
 	p{
 		@include all-font(14px, black, 'arial');
+		margin-top: 10px;
 	}
 	.title{
 		@include all-font(18px, #8f8d88, $georgia);
@@ -28,6 +29,7 @@
 		&:hover{
 			p{
 				@include all-font(14px, $maroon, 'arial');
+				margin-top: 10px;
 			}
 			.date{
 				background: $maroon;
@@ -49,9 +51,14 @@
 	border-radius: 50px;
 	&:hover{
 		background: $maroon;
+		text-decoration: none;
+		
 	}
 }
 .ind-post{
 	border-top: 1px solid black;
 	padding-top: 10px;
+	&:hover{
+		text-decoration: none;
+	}
 }

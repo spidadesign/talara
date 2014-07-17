@@ -30,4 +30,11 @@ html, body {
   width: auto !important;
   overflow-x: hidden !important;
 }
-body{background: url(../images/map.png) no-repeat right bottom;}
+html{
+	position: relative;
+  	min-height: 100%;
+}
+body{
+	background: url(../images/map.png) no-repeat right bottom;
+	margin-bottom: 60px;
+}

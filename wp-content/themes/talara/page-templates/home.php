@@ -33,24 +33,40 @@
 						$count = 0;
 						if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); 
 							if(($count % 2 === 0) && ($count !== 0)):
+								
 								echo "</div><div>";
 							endif;
+							$custom = get_post_custom(get_the_ID());
+							$pdf = get_attached_media();
+							$date = get_the_date('m/d');
+							if($pdf):
+								foreach ($pdf as $p):
+									if($p->post_mime_type === 'application/pdf'):
+										$guid = $p->guid;
+									endif;
+								endforeach;
+							elseif($custom):
+								$guid = $custom['site_url'][0]; 
+								
+							endif;
+							
 						?>
 						   	<div class="col-md-6 ind-post">
-						   		<a href="<?php the_permalink(); ?>">
+						   		<a href="<?php echo $guid ?>" target="_blank">
 						   			<div class="row">
 						   				<div class="date">
-						   					<?php the_date('m/d'); ?>
+						   					<?php echo $date; ?>
 						   				</div>
 						   				<div class="row">
 						   					<div class="col-md-10">
-						   						 <?php the_excerpt(); ?>
+						   						 <p><?php the_title(); ?></p>
 						   					</div>
 						   				</div>
 						   			</div>
 						   				</a>
 						   		</div>
 					<?php
+						unset($guid);
 						$count++;
 						endwhile;
 						wp_reset_postdata();
