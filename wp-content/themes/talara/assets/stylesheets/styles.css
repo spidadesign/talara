@@ -8388,8 +8388,10 @@ nav {
 
 /* line 1, ../sass/partials/_footer.scss */
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   height: 60px;
   background-color: #e1ddd5;
@@ -8400,14 +8402,14 @@ footer {
   color: #8f8d88;
   font-family: "arial";
 }
-/* line 11, ../sass/partials/_footer.scss */
+/* line 13, ../sass/partials/_footer.scss */
 footer a {
   font-size: 11px;
   color: #84070d;
   font-family: "arial";
   text-decoration: underline;
 }
-/* line 14, ../sass/partials/_footer.scss */
+/* line 16, ../sass/partials/_footer.scss */
 footer a:hover {
   font-size: 11px;
   color: #84070d;

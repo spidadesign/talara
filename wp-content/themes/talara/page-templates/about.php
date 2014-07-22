@@ -9,7 +9,7 @@
 		</h1>
 	</div>
 </div>
-<div class="container">
+<div class="container about">
 	<?php echo get_post()->post_content; ?>
 </div>
 <?php get_footer(); ?>
