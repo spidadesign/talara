@@ -5630,6 +5630,8 @@ footer {
     color: #84070d;
     font-size: 20px;
     line-height: 35px; }
+.page-template-page-templatesabout-php .about {
+  margin-bottom: 20px; }
 
 .page-template-page-templatesnews-php .col-md-7:first-child {
   margin-left: 40px; }
@@ -5704,6 +5706,9 @@ footer {
     color: #fff;
     background-color: #84070d; }
 
+.portfolio-img {
+  padding-top: 25px; }
+
 .page-template-page-templatesteam-php {
   font-size: 16px;
   color: #454546; }
@@ -5744,9 +5749,6 @@ footer {
       color: #fff; }
 
 .collapse.in {
-  display: inline; }
-
-.member p:first-child {
   display: inline; }
 
 .single-strategy .row {
@@ -5820,7 +5822,28 @@ footer {
   .page-template-page-templatesnews-php .col-md-7:first-child {
     margin-left: 0; }
 
-  /*-------- Start News----------*/ }
+  /*-------- End News----------*/
+  /*-------- Start Portfolio ----------*/
+  .portfolio-img {
+    text-align: center;
+    padding-top: 0; }
+
+  .page-template-page-templatesportfolio-php h3 {
+    display: block;
+    text-align: center; }
+  .page-template-page-templatesportfolio-php .content p {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  /*-------- end Portfolio----------*/ }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  /*-------- Start Portfolio ----------*/
+  .page-template-page-templatesportfolio-php a.btn-default {
+    float: none;
+    margin-bottom: 10px;
+    margin-left: 105px; }
+
+  /*-------- end Portfolio----------*/ }
 @media (max-width: 767px) {
   .header-slider .slick-slide img {
     height: auto; }
@@ -5835,7 +5858,10 @@ footer {
     margin-top: 0; }
 
   .red {
-    margin-top: 0; } }
+    margin-top: 0; }
+
+  .dropdown:hover .dropdown-menu {
+    display: list-item; } }
 .navbar-toggle {
   background-color: #fff;
   border-color: #fff; }

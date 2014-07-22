@@ -61,4 +61,23 @@ body{
 		}
 	}
 }
-/*-------- Start News----------*/
+/*-------- End News----------*/
+
+/*-------- Start Portfolio ----------*/
+.portfolio-img{
+	text-align: center;
+	padding-top: 0;
+}
+.page-template-page-templatesportfolio-php{
+	h3{
+		display: block;
+		text-align: center;
+	}
+	.content{
+		p{
+			padding-left:15px;
+			padding-right:15px;
+		}
+	}
+}
+/*-------- end Portfolio----------*/

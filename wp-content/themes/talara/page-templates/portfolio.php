@@ -36,7 +36,7 @@
 						<?php endif; ?>
 					</div>
 					<div class="row">
-						<?php the_content(); ?>
+						<span class="content"><?php the_content(); ?></span>
 					</div>
 				</div>
 			</div>

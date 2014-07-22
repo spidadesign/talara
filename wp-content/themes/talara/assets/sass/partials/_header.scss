@@ -11,9 +11,6 @@ nav{
 .navbar-ex1-collapse{
 	a{
 		@include all-font(18px, white, $georgia);
-		&:hover{
-			
-		}
 	}
 }
 .nav{

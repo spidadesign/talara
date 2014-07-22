@@ -8065,7 +8065,7 @@ button.close {
 }
 /* line 60, ../../bower_components/slick-carousel/slick/slick.scss */
 .slick-loading .slick-list {
-  background: white url('/images/ajax-loader.gif?1399425036') center center no-repeat;
+  background: white url('/images/ajax-loader.gif?1406039935') center center no-repeat;
 }
 /* line 64, ../../bower_components/slick-carousel/slick/slick.scss */
 .slick-list.dragging {
@@ -8324,41 +8324,41 @@ nav {
   font-family: "adobe-caslon-pro";
 }
 
-/* line 22, ../sass/partials/_header.scss */
+/* line 19, ../sass/partials/_header.scss */
 .nav > li > a:hover, .nav > li > a:active {
   background-color: #51070d;
 }
 
-/* line 30, ../sass/partials/_header.scss */
+/* line 27, ../sass/partials/_header.scss */
 .nav .open > a {
   background-color: #51070d;
 }
-/* line 32, ../sass/partials/_header.scss */
+/* line 29, ../sass/partials/_header.scss */
 .nav .open > a:hover, .nav .open > a:focus {
   background-color: #51070d;
 }
 
-/* line 38, ../sass/partials/_header.scss */
+/* line 35, ../sass/partials/_header.scss */
 .header-slider {
   border-bottom: 3px solid #51070d;
 }
-/* line 41, ../sass/partials/_header.scss */
+/* line 38, ../sass/partials/_header.scss */
 .header-slider .slick-slide img {
   width: 100%;
   height: 475px;
 }
 
-/* line 47, ../sass/partials/_header.scss */
+/* line 44, ../sass/partials/_header.scss */
 .logo {
   border-bottom: 3px solid #51070d;
   background-color: #f6f4f2;
 }
-/* line 50, ../sass/partials/_header.scss */
+/* line 47, ../sass/partials/_header.scss */
 .logo img {
   height: 100px;
 }
 
-/* line 56, ../sass/partials/_header.scss */
+/* line 53, ../sass/partials/_header.scss */
 .navbar-nav > li > .dropdown-menu {
   background-color: #84070d;
   padding: 0;
@@ -8366,22 +8366,22 @@ nav {
   border-radius: 0;
 }
 
-/* line 65, ../sass/partials/_header.scss */
+/* line 62, ../sass/partials/_header.scss */
 .navbar-right .dropdown-menu {
   right: auto;
 }
 
-/* line 71, ../sass/partials/_header.scss */
+/* line 68, ../sass/partials/_header.scss */
 .dropdown-menu > li > a {
   color: white;
 }
-/* line 73, ../sass/partials/_header.scss */
+/* line 70, ../sass/partials/_header.scss */
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
   background-color: #51070d;
   color: white;
 }
 
-/* line 82, ../sass/partials/_header.scss */
+/* line 79, ../sass/partials/_header.scss */
 .dropdown:hover .dropdown-menu {
   display: block;
 }
@@ -8521,6 +8521,10 @@ footer a:hover {
   font-size: 20px;
   line-height: 35px;
 }
+/* line 22, ../sass/partials/pages/_about.scss */
+.page-template-page-templatesabout-php .about {
+  margin-bottom: 20px;
+}
 
 /* line 3, ../sass/partials/pages/_news.scss */
 .page-template-page-templatesnews-php .col-md-7:first-child {
@@ -8635,6 +8639,11 @@ footer a:hover {
   background-color: #84070d;
 }
 
+/* line 32, ../sass/partials/pages/_portfolio.scss */
+.portfolio-img {
+  padding-top: 25px;
+}
+
 /* line 1, ../sass/partials/pages/_team.scss */
 .page-template-page-templatesteam-php {
   font-size: 16px;
@@ -8696,11 +8705,6 @@ footer a:hover {
 
 /* line 50, ../sass/partials/pages/_team.scss */
 .collapse.in {
-  display: inline;
-}
-
-/* line 55, ../sass/partials/pages/_team.scss */
-.member p:first-child {
   display: inline;
 }
 
@@ -8815,7 +8819,37 @@ footer a:hover {
     margin-left: 0;
   }
 
-  /*-------- Start News----------*/
+  /*-------- End News----------*/
+  /*-------- Start Portfolio ----------*/
+  /* line 67, ../sass/partials/mobile/iPhone/_both.scss */
+  .portfolio-img {
+    text-align: center;
+    padding-top: 0;
+  }
+
+  /* line 72, ../sass/partials/mobile/iPhone/_both.scss */
+  .page-template-page-templatesportfolio-php h3 {
+    display: block;
+    text-align: center;
+  }
+  /* line 77, ../sass/partials/mobile/iPhone/_both.scss */
+  .page-template-page-templatesportfolio-php .content p {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /*-------- end Portfolio----------*/
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  /*-------- Start Portfolio ----------*/
+  /* line 4, ../sass/partials/mobile/iPhone/_portrait.scss */
+  .page-template-page-templatesportfolio-php a.btn-default {
+    float: none;
+    margin-bottom: 10px;
+    margin-left: 105px;
+  }
+
+  /*-------- end Portfolio----------*/
 }
 @media (max-width: 767px) {
   /* line 13, ../sass/partials/mobile/_all.scss */
@@ -8840,13 +8874,18 @@ footer a:hover {
   .red {
     margin-top: 0;
   }
+
+  /* line 32, ../sass/partials/mobile/_all.scss */
+  .dropdown:hover .dropdown-menu {
+    display: list-item;
+  }
 }
-/* line 31, ../sass/partials/mobile/_all.scss */
+/* line 38, ../sass/partials/mobile/_all.scss */
 .navbar-toggle {
   background-color: #fff;
   border-color: #fff;
 }
-/* line 34, ../sass/partials/mobile/_all.scss */
+/* line 41, ../sass/partials/mobile/_all.scss */
 .navbar-toggle .icon-bar {
   background-color: #84070d;
 }

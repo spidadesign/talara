@@ -33,6 +33,7 @@
 				$(".advisory").addClass('active');
 			}
 		});
+		$(".full-about.collapse").prev('p').css('display', 'inline');
 		$('.single-strategy img.size-medium').addClass('img-responsive');
 		  (function(d) {
 		    var config = {
@@ -118,7 +119,7 @@
     				}
 		        };
 
-		        var map = new google.maps.Map(document.getElementById("new-york"),
+		        var map = new google.maps.Map(document.getElementById("new_york"),
 		        								mapOptions);
 		        var houston = new google.maps.Map(document.getElementById("houston"),
 		        								houstonOptions);
