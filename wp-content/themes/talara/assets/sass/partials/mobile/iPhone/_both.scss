@@ -2,6 +2,14 @@
 body{
 	background: none;
 }
+.logo{
+	img{
+		height: 80px;
+	}
+}
+.title-bar{
+	margin-bottom: 0;
+}
 /*-------- Start Home ----------*/
 //Slider
 .home-slider{
@@ -46,6 +54,9 @@ body{
 		}
 	}
 }
+.about{
+	margin-top: -50px;
+}
 /*-------- End About Us ----------*/
 
 /*-------- Start News ----------*/
@@ -72,6 +83,12 @@ body{
 	h3{
 		display: block;
 		text-align: center;
+	}
+	a{
+		&.btn-default{
+			float: none;
+			margin-bottom: 10px;
+		}
 	}
 	.content{
 		p{

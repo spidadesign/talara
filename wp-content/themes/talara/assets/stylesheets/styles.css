@@ -8769,75 +8769,104 @@ footer a:hover {
     background: none;
   }
 
+  /* line 6, ../sass/partials/mobile/iPhone/_both.scss */
+  .logo img {
+    height: 80px;
+  }
+
+  /* line 10, ../sass/partials/mobile/iPhone/_both.scss */
+  .title-bar {
+    margin-bottom: 0;
+  }
+
   /*-------- Start Home ----------*/
-  /* line 9, ../sass/partials/mobile/iPhone/_both.scss */
+  /* line 17, ../sass/partials/mobile/iPhone/_both.scss */
   .home-slider .slick-slide img {
     height: auto;
   }
 
-  /* line 14, ../sass/partials/mobile/iPhone/_both.scss */
+  /* line 22, ../sass/partials/mobile/iPhone/_both.scss */
   .blog-home {
     margin-top: 0;
   }
 
   /*-------- End Home ----------*/
   /*-------- Start Team ----------*/
-  /* line 20, ../sass/partials/mobile/iPhone/_both.scss */
+  /* line 28, ../sass/partials/mobile/iPhone/_both.scss */
   .member {
     padding-left: 27px;
   }
 
-  /* line 23, ../sass/partials/mobile/iPhone/_both.scss */
+  /* line 31, ../sass/partials/mobile/iPhone/_both.scss */
   .team-img {
     text-align: center;
   }
 
   /*-------- End Team ----------*/
   /*-------- Start Single Strategy ----------*/
-  /* line 31, ../sass/partials/mobile/iPhone/_both.scss */
+  /* line 39, ../sass/partials/mobile/iPhone/_both.scss */
   .single-strategy .content img {
     display: none;
   }
-  /* line 34, ../sass/partials/mobile/iPhone/_both.scss */
+  /* line 42, ../sass/partials/mobile/iPhone/_both.scss */
   .single-strategy .content .col-md-8 {
     padding-top: 0;
   }
 
   /*-------- End Single Strategy ----------*/
   /*-------- Start About Us ----------*/
-  /* line 44, ../sass/partials/mobile/iPhone/_both.scss */
+  /* line 52, ../sass/partials/mobile/iPhone/_both.scss */
   .page-template-page-templatesabout-php .col-md-4 img {
     display: none;
   }
 
+  /* line 57, ../sass/partials/mobile/iPhone/_both.scss */
+  .about {
+    margin-top: -50px;
+  }
+
   /*-------- End About Us ----------*/
   /*-------- Start News ----------*/
-  /* line 54, ../sass/partials/mobile/iPhone/_both.scss */
+  /* line 65, ../sass/partials/mobile/iPhone/_both.scss */
   .page-template-page-templatesnews-php .col-md-4 img {
     display: none;
   }
-  /* line 59, ../sass/partials/mobile/iPhone/_both.scss */
+  /* line 70, ../sass/partials/mobile/iPhone/_both.scss */
   .page-template-page-templatesnews-php .col-md-7:first-child {
     margin-left: 0;
   }
 
   /*-------- End News----------*/
   /*-------- Start Portfolio ----------*/
-  /* line 67, ../sass/partials/mobile/iPhone/_both.scss */
+  /* line 78, ../sass/partials/mobile/iPhone/_both.scss */
   .portfolio-img {
     text-align: center;
     padding-top: 0;
   }
 
-  /* line 72, ../sass/partials/mobile/iPhone/_both.scss */
+  /* line 83, ../sass/partials/mobile/iPhone/_both.scss */
   .page-template-page-templatesportfolio-php h3 {
     display: block;
     text-align: center;
   }
-  /* line 77, ../sass/partials/mobile/iPhone/_both.scss */
+  /* line 88, ../sass/partials/mobile/iPhone/_both.scss */
+  .page-template-page-templatesportfolio-php a.btn-default {
+    float: none;
+    margin-bottom: 10px;
+  }
+  /* line 94, ../sass/partials/mobile/iPhone/_both.scss */
   .page-template-page-templatesportfolio-php .content p {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  /*-------- end Portfolio----------*/
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  /*-------- Start Portfolio ----------*/
+  /* line 4, ../sass/partials/mobile/iPhone/_landscape.scss */
+  .page-template-page-templatesportfolio-php a.btn-default {
+    margin-left: 220px;
   }
 
   /*-------- end Portfolio----------*/
@@ -8846,7 +8875,6 @@ footer a:hover {
   /*-------- Start Portfolio ----------*/
   /* line 4, ../sass/partials/mobile/iPhone/_portrait.scss */
   .page-template-page-templatesportfolio-php a.btn-default {
-    float: none;
     margin-bottom: 10px;
     margin-left: 105px;
   }
@@ -8881,13 +8909,18 @@ footer a:hover {
   .dropdown:hover .dropdown-menu {
     display: list-item;
   }
+
+  /* line 37, ../sass/partials/mobile/_all.scss */
+  footer {
+    text-align: center;
+  }
 }
-/* line 38, ../sass/partials/mobile/_all.scss */
+/* line 41, ../sass/partials/mobile/_all.scss */
 .navbar-toggle {
   background-color: #fff;
   border-color: #fff;
 }
-/* line 41, ../sass/partials/mobile/_all.scss */
+/* line 44, ../sass/partials/mobile/_all.scss */
 .navbar-toggle .icon-bar {
   background-color: #84070d;
 }

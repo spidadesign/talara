@@ -5790,6 +5790,9 @@ footer {
   body {
     background: none; }
 
+  .logo img {
+    height: 80px; }
+
   /*-------- Start Home ----------*/
   .home-slider .slick-slide img {
     height: auto; }
@@ -5817,12 +5820,17 @@ footer {
   .page-template-page-templatesabout-php .col-md-4 img {
     display: none; }
 
+  .about {
+    margin-top: -50px; }
+
   /*-------- End About Us ----------*/
   /*-------- Start News ----------*/
   .page-template-page-templatesnews-php .col-md-4 img {
     display: none; }
   .page-template-page-templatesnews-php .col-md-7:first-child {
     margin-left: 0; }
+  .page-template-page-templatesnews-php .title-bar {
+    margin-bottom: 0; }
 
   /*-------- End News----------*/
   /*-------- Start Portfolio ----------*/
@@ -5833,15 +5841,23 @@ footer {
   .page-template-page-templatesportfolio-php h3 {
     display: block;
     text-align: center; }
+  .page-template-page-templatesportfolio-php a.btn-default {
+    float: none;
+    margin-bottom: 10px; }
   .page-template-page-templatesportfolio-php .content p {
     padding-left: 15px;
     padding-right: 15px; }
 
   /*-------- end Portfolio----------*/ }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  /*-------- Start Portfolio ----------*/
+  .page-template-page-templatesportfolio-php a.btn-default {
+    margin-left: 220px; }
+
+  /*-------- end Portfolio----------*/ }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /*-------- Start Portfolio ----------*/
   .page-template-page-templatesportfolio-php a.btn-default {
-    float: none;
     margin-bottom: 10px;
     margin-left: 105px; }
 
@@ -5863,7 +5879,10 @@ footer {
     margin-top: 0; }
 
   .dropdown:hover .dropdown-menu {
-    display: list-item; } }
+    display: list-item; }
+
+  footer {
+    text-align: center; } }
 .navbar-toggle {
   background-color: #fff;
   border-color: #fff; }

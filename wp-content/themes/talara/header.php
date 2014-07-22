@@ -49,7 +49,7 @@
 		<div class="logo">
 			<div class="container">
 				<a href="<?php echo site_url(); ?>">
-					<img src="<?php bloginfo('template_directory'); ?>/assets/images/logo.png">
+					<img src="<?php bloginfo('template_directory'); ?>/assets/images/logo.png" class="img-responsive">
 				</a>
 			</div>
 		</div>
