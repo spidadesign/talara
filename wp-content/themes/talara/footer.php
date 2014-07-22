@@ -14,6 +14,7 @@
 	<script src="<?php bloginfo('template_directory'); ?>/bower_components/twbs-bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/bower_components/twbs-bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/bower_components/slick-carousel/slick/slick.min.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/bower_components/html5shiv/dist/html5shiv.min.js"></script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKGY4G6u_ZpjZPizMVu6E__tqxXay_Nfc"> </script>
 	<script type="text/javascript">
 	$(document).ready(function(){
@@ -31,7 +32,6 @@
 			else if(type === 'advisory'){
 				$(".advisory").addClass('active');
 			}
-			console.log(type);
 		});
 		$('.single-strategy img.size-medium').addClass('img-responsive');
 		  (function(d) {
