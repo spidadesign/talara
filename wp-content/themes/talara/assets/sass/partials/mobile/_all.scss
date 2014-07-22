@@ -5,3 +5,33 @@
 
 //iPhone 5 in portrait
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {@import "iPhone/portrait"}
+
+
+@media (max-width:767px) {
+	.header-slider{
+		.slick-slide{
+			img{
+				height: auto;
+			}
+		}
+	}
+	.navbar-nav{
+		position: relative;
+		z-index: 1;
+		background-color: $maroon;
+		top: -28px;
+	}
+	.blog-home{
+		margin-top: 0;
+	}
+	.red{
+		margin-top:0;
+	}
+}
+.navbar-toggle{
+	background-color: #fff;
+	border-color: #fff;
+	.icon-bar{
+		background-color:$maroon;
+	}
+}

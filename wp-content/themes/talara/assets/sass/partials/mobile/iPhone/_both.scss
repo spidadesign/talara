@@ -1,7 +1,6 @@
 //General
 body{
 	background: none;
-	
 }
 /*-------- Start Home ----------*/
 //Slider
@@ -11,6 +10,9 @@ body{
 			height:auto;
 		}
 	}
+}
+.blog-home{
+	margin-top: 0;
 }
 /*-------- End Home ----------*/
 
@@ -45,3 +47,18 @@ body{
 	}
 }
 /*-------- End About Us ----------*/
+
+/*-------- Start News ----------*/
+.page-template-page-templatesnews-php{
+	.col-md-4{
+		img{
+			display:none;
+		}
+	}
+	.col-md-7{
+		&:first-child{
+			margin-left: 0;
+		}
+	}
+}
+/*-------- Start News----------*/
