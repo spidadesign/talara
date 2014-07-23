@@ -36,10 +36,10 @@
 				$content = explode(' ', apply_filters( 'the_content', get_the_content()));
 			?>
 			<div class="row">
-				<div class="col-md-3 col-xs-12 team-img">
+				<div class="col-md-3 col-sm-3 col-xs-12 team-img">
 					<?php echo get_the_post_thumbnail();?>
 				</div>
-				<div class="col-md-8 col-md-offset-1 col-xs-offset-0 col-xs-col-12 member">
+				<div class="col-md-8 col-md-offset-1 col-xs-offset-0 col-sm-offset-1 col-sm-7 col-xs-col-12 member">
 					<div class="row">
 						<div class="title">
 							<?php the_title(); ?>

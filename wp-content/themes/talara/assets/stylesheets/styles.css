@@ -8881,13 +8881,44 @@ footer a:hover {
 
   /*-------- end Portfolio----------*/
 }
-@media (max-width: 767px) {
-  /* line 13, ../sass/partials/mobile/_all.scss */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 1, ../sass/partials/mobile/iPad/_both.scss */
+  .blog-home {
+    margin-top: 20px;
+  }
+
+  /* line 6, ../sass/partials/mobile/iPad/_both.scss */
   .header-slider .slick-slide img {
     height: auto;
   }
 
-  /* line 18, ../sass/partials/mobile/_all.scss */
+  /* line 11, ../sass/partials/mobile/iPad/_both.scss */
+  footer {
+    text-align: center;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* line 3, ../sass/partials/mobile/iPad/_portrait.scss */
+  .page-template-page-templatesabout-php .about img {
+    display: none;
+  }
+
+  /* line 10, ../sass/partials/mobile/iPad/_portrait.scss */
+  .single-strategy .content img {
+    display: none;
+  }
+  /* line 14, ../sass/partials/mobile/iPad/_portrait.scss */
+  .single-strategy .col-md-8 {
+    padding-top: 25px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 21, ../sass/partials/mobile/_all.scss */
+  .header-slider .slick-slide img {
+    height: auto;
+  }
+
+  /* line 26, ../sass/partials/mobile/_all.scss */
   .navbar-nav {
     position: relative;
     z-index: 1;
@@ -8895,32 +8926,32 @@ footer a:hover {
     top: -28px;
   }
 
-  /* line 24, ../sass/partials/mobile/_all.scss */
+  /* line 32, ../sass/partials/mobile/_all.scss */
   .blog-home {
     margin-top: 0;
   }
 
-  /* line 27, ../sass/partials/mobile/_all.scss */
+  /* line 35, ../sass/partials/mobile/_all.scss */
   .red {
     margin-top: 0;
   }
 
-  /* line 32, ../sass/partials/mobile/_all.scss */
+  /* line 40, ../sass/partials/mobile/_all.scss */
   .dropdown:hover .dropdown-menu {
     display: list-item;
   }
 
-  /* line 37, ../sass/partials/mobile/_all.scss */
+  /* line 45, ../sass/partials/mobile/_all.scss */
   footer {
     text-align: center;
   }
 }
-/* line 41, ../sass/partials/mobile/_all.scss */
+/* line 49, ../sass/partials/mobile/_all.scss */
 .navbar-toggle {
   background-color: #fff;
   border-color: #fff;
 }
-/* line 44, ../sass/partials/mobile/_all.scss */
+/* line 52, ../sass/partials/mobile/_all.scss */
 .navbar-toggle .icon-bar {
   background-color: #84070d;
 }

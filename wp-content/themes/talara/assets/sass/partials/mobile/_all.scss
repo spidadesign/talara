@@ -6,6 +6,14 @@
 //iPhone 5 in portrait
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {@import "iPhone/portrait"}
 
+//iPad All
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {@import "iPad/both"}
+
+//iPad in landscape
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {@import "iPad/landscape"}
+
+//iPad in portrait
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {@import "iPad/portrait"}
 
 @media (max-width:767px) {
 	.header-slider{
