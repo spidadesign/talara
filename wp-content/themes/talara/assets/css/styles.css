@@ -5648,6 +5648,8 @@ footer {
     color: #8f8d88;
     font-size: 14px;
     text-decoration: none; }
+.blog .col-md-4 img {
+  margin-top: 35px; }
 .blog .ind-post {
   border: none; }
   .blog .ind-post hr {
@@ -5667,7 +5669,9 @@ footer {
 
 .nav-previous, .nav-next {
   height: 40px;
-  width: 40px; }
+  width: 40px;
+  margin: auto;
+  margin-bottom: 10px; }
 
 .nav-previous {
   background-image: url("../images/prev-default.png"); }
@@ -5794,7 +5798,8 @@ footer {
   font-size: 16px; }
 .page-template-page-templatescontact-php h3 {
   color: #84070d;
-  font-size: 16px; }
+  font-size: 16px;
+  margin-top: 10px; }
 .page-template-page-templatescontact-php h2 {
   color: #84070d;
   font-size: 24px; }
@@ -5802,7 +5807,8 @@ footer {
 .map-canvas {
   max-width: 435px;
   width: auto;
-  height: 238px; }
+  height: 238px;
+  margin-top: 10px; }
 
 .gmnoprint {
   display: none !important; }

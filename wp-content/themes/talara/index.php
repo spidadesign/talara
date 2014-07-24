@@ -1,19 +1,19 @@
 <?php
 	/* Template Name: News */
 	get_header();
-	$paged = get_query_var( 'page' ) ? get_query_var( 'page' ) : 1;
+	$paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 	$args = array(
 		'posts_per_page' => 8,
 		'paged' => $paged,
 		);
 	$the_query = new WP_Query( $args );
-	echo "<pre>"; print_r($the_query); echo "</pre>";
+	//echo "<pre>"; print_r($the_query); echo "</pre>";
 	$count = 0;
 	$evenOdd = 0;
 ?>
 <div class="title-bar">
 	<div class="container">
-		<h1><?php the_title(); ?></h1>
+		<h1>News</h1>
 	</div>
 </div>
 <div class="container">
@@ -50,12 +50,12 @@
 					</div>
 				</div>
 				<div class="col-md-4">
-					<img class="img-responsive" src="http://placehold.it/350x350">
+					<img class="img-responsive" src="http://placehold.it/420x420">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4">
-					<img class="img-responsive" src="http://placehold.it/350x350">
+					<img class="img-responsive" src="http://placehold.it/420x420">
 				</div>
 				<div class="col-md-7">
 					<div class="row">
@@ -83,13 +83,17 @@
 		endwhile;
 	?>
 </div></div></div>
-	<div class="nav-previous"><?php next_posts_link( 'Older posts' ); ?></div>
-	<div class="nav-next"><?php previous_posts_link( 'Newer posts' ); ?></div>
+<div>
+	<?php
+		echo get_next_posts_link( '<div class="nav-previous"></div>', $the_query->max_num_pages );
+		echo get_previous_posts_link( '<div class="nav-next"></div>' );
+	?>
+	</div>
 </div>
 
-<?php 
+<?php
 	wp_reset_postdata();
-	else:  
+	else:
 ?>
   <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 <?php endif; ?>

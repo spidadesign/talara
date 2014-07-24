@@ -8550,54 +8550,60 @@ footer a:hover {
   text-decoration: none;
 }
 /* line 17, ../sass/partials/pages/_news.scss */
+.blog .col-md-4 img {
+  margin-top: 35px;
+}
+/* line 21, ../sass/partials/pages/_news.scss */
 .blog .ind-post {
   border: none;
 }
-/* line 19, ../sass/partials/pages/_news.scss */
+/* line 23, ../sass/partials/pages/_news.scss */
 .blog .ind-post hr {
   border-top: 3px solid transparent;
 }
-/* line 22, ../sass/partials/pages/_news.scss */
+/* line 26, ../sass/partials/pages/_news.scss */
 .blog .ind-post:hover {
   background-color: #f6f4f2;
   color: #84070d;
 }
-/* line 25, ../sass/partials/pages/_news.scss */
+/* line 29, ../sass/partials/pages/_news.scss */
 .blog .ind-post:hover .date {
   background-image: url("../images/date-hover.png");
 }
-/* line 28, ../sass/partials/pages/_news.scss */
+/* line 32, ../sass/partials/pages/_news.scss */
 .blog .ind-post:hover hr {
   border-top: 3px solid #51070d;
   max-width: 240px;
   margin-right: 25px;
 }
-/* line 35, ../sass/partials/pages/_news.scss */
+/* line 39, ../sass/partials/pages/_news.scss */
 .blog .date {
   background-color: #dad5ca;
   margin-bottom: 10px;
 }
 
-/* line 40, ../sass/partials/pages/_news.scss */
+/* line 44, ../sass/partials/pages/_news.scss */
 .nav-previous, .nav-next {
   height: 40px;
   width: 40px;
+  margin: auto;
+  margin-bottom: 10px;
 }
 
-/* line 44, ../sass/partials/pages/_news.scss */
+/* line 50, ../sass/partials/pages/_news.scss */
 .nav-previous {
   background-image: url("../images/prev-default.png");
 }
-/* line 46, ../sass/partials/pages/_news.scss */
+/* line 52, ../sass/partials/pages/_news.scss */
 .nav-previous:hover {
   background-image: url("../images/prev-hover.png");
 }
 
-/* line 50, ../sass/partials/pages/_news.scss */
+/* line 56, ../sass/partials/pages/_news.scss */
 .nav-next {
   background-image: url("../images/next-default.png");
 }
-/* line 52, ../sass/partials/pages/_news.scss */
+/* line 58, ../sass/partials/pages/_news.scss */
 .nav-next:hover {
   background-image: url("../images/next-hover.png");
 }
@@ -8779,26 +8785,28 @@ footer a:hover {
 .page-template-page-templatescontact-php h3 {
   color: #84070d;
   font-size: 16px;
+  margin-top: 10px;
 }
-/* line 11, ../sass/partials/pages/_contact.scss */
+/* line 12, ../sass/partials/pages/_contact.scss */
 .page-template-page-templatescontact-php h2 {
   color: #84070d;
   font-size: 24px;
 }
 
-/* line 16, ../sass/partials/pages/_contact.scss */
+/* line 17, ../sass/partials/pages/_contact.scss */
 .map-canvas {
   max-width: 435px;
   width: auto;
   height: 238px;
+  margin-top: 10px;
 }
 
-/* line 21, ../sass/partials/pages/_contact.scss */
+/* line 23, ../sass/partials/pages/_contact.scss */
 .gmnoprint {
   display: none !important;
 }
 
-/* line 24, ../sass/partials/pages/_contact.scss */
+/* line 26, ../sass/partials/pages/_contact.scss */
 .joe {
   margin-top: 20px;
 }

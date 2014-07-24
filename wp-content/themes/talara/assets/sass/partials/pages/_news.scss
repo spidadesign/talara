@@ -11,7 +11,11 @@
 			color:#8f8d88;
 			font-size: 14px;
 			text-decoration: none;
-
+		}
+	}
+	.col-md-4{
+		img{
+			margin-top: 35px;
 		}
 	}
 	.ind-post{
@@ -40,6 +44,8 @@
 .nav-previous, .nav-next{
 	height: 40px;
 	width: 40px;
+	margin: auto;
+	margin-bottom:10px;
 }
 .nav-previous{
 	background-image: url('../images/prev-default.png');
