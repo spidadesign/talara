@@ -1,4 +1,4 @@
-.page-template-page-templatesnews-php{
+.blog{
 	.col-md-7{
 		&:first-child{
 			margin-left: 40px;
@@ -16,16 +16,40 @@
 	}
 	.ind-post{
 		border:none;
+		hr{
+			border-top: 3px solid transparent;
+		}
 		&:hover{
-				background-color: #f6f4f2;
-				color:$maroon;
-				.date{
-					background-color: $maroon;
-				}
+			background-color: #f6f4f2;
+			color:$maroon;
+			.date{
+				background-image:url("../images/date-hover.png");
 			}
+			hr{
+				border-top: 3px solid $burgandy;
+				max-width: 240px;
+				margin-right: 25px;
+			}
+		}
 	}
 	.date{
 		background-color: #dad5ca;
 		margin-bottom: 10px;
+	}
+}
+.nav-previous, .nav-next{
+	height: 40px;
+	width: 40px;
+}
+.nav-previous{
+	background-image: url('../images/prev-default.png');
+	&:hover{
+		background-image: url('../images/prev-hover.png');
+	}
+}
+.nav-next{
+	background-image: url('../images/next-default.png');
+	&:hover{
+		background-image: url('../images/next-hover.png');
 	}
 }

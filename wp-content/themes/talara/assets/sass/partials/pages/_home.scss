@@ -27,15 +27,16 @@
 	}
 	a{
 		&:hover{
+			text-decoration: none;
 			p{
 				@include all-font(14px, $maroon, 'arial');
 				margin-top: 10px;
 			}
 			.date{
-				background: $maroon;
+				background-image:url("../images/date-hover.png");
+				text-decoration: none;
 			}
 			.ind-post{
-				
 				border-top: 3px solid $burgandy;
 			}
 		}
@@ -44,15 +45,15 @@
 .date{
 	@include all-font(16px, white, $georgia);
 	background: black;
-	height: 55px;
-	width: 55px;
-	padding-left: 9px;
-	padding-top: 20px;
+	height: 60px;
+	width: 60px;
+	padding-left: 10px;
+	padding-top: 22px;
 	border-radius: 50px;
 	&:hover{
-		background: $maroon;
+		background-image:url("../images/date-hover.png");
+		background-repeat: none;
 		text-decoration: none;
-		
 	}
 }
 .ind-post{

@@ -8456,46 +8456,52 @@ footer a:hover {
   color: #8f8d88;
   font-family: "adobe-caslon-pro";
 }
-/* line 30, ../sass/partials/pages/_home.scss */
+/* line 29, ../sass/partials/pages/_home.scss */
+.blog-home a:hover {
+  text-decoration: none;
+}
+/* line 31, ../sass/partials/pages/_home.scss */
 .blog-home a:hover p {
   font-size: 14px;
   color: #84070d;
   font-family: "arial";
   margin-top: 10px;
 }
-/* line 34, ../sass/partials/pages/_home.scss */
+/* line 35, ../sass/partials/pages/_home.scss */
 .blog-home a:hover .date {
-  background: #84070d;
+  background-image: url("../images/date-hover.png");
+  text-decoration: none;
 }
-/* line 37, ../sass/partials/pages/_home.scss */
+/* line 39, ../sass/partials/pages/_home.scss */
 .blog-home a:hover .ind-post {
   border-top: 3px solid #51070d;
 }
 
-/* line 44, ../sass/partials/pages/_home.scss */
+/* line 45, ../sass/partials/pages/_home.scss */
 .date {
   font-size: 16px;
   color: white;
   font-family: "adobe-caslon-pro";
   background: black;
-  height: 55px;
-  width: 55px;
-  padding-left: 9px;
-  padding-top: 20px;
+  height: 60px;
+  width: 60px;
+  padding-left: 10px;
+  padding-top: 22px;
   border-radius: 50px;
 }
-/* line 52, ../sass/partials/pages/_home.scss */
+/* line 53, ../sass/partials/pages/_home.scss */
 .date:hover {
-  background: #84070d;
+  background-image: url("../images/date-hover.png");
+  background-repeat: none;
   text-decoration: none;
 }
 
-/* line 58, ../sass/partials/pages/_home.scss */
+/* line 59, ../sass/partials/pages/_home.scss */
 .ind-post {
   border-top: 1px solid black;
   padding-top: 10px;
 }
-/* line 61, ../sass/partials/pages/_home.scss */
+/* line 62, ../sass/partials/pages/_home.scss */
 .ind-post:hover {
   text-decoration: none;
 }
@@ -8529,37 +8535,71 @@ footer a:hover {
 }
 
 /* line 3, ../sass/partials/pages/_news.scss */
-.page-template-page-templatesnews-php .col-md-7:first-child {
+.blog .col-md-7:first-child {
   margin-left: 40px;
 }
 /* line 7, ../sass/partials/pages/_news.scss */
-.page-template-page-templatesnews-php .col-md-6 {
+.blog .col-md-6 {
   padding-top: 10px;
   padding-left: 40px;
 }
 /* line 10, ../sass/partials/pages/_news.scss */
-.page-template-page-templatesnews-php .col-md-6 a {
+.blog .col-md-6 a {
   color: #8f8d88;
   font-size: 14px;
   text-decoration: none;
 }
 /* line 17, ../sass/partials/pages/_news.scss */
-.page-template-page-templatesnews-php .ind-post {
+.blog .ind-post {
   border: none;
 }
 /* line 19, ../sass/partials/pages/_news.scss */
-.page-template-page-templatesnews-php .ind-post:hover {
+.blog .ind-post hr {
+  border-top: 3px solid transparent;
+}
+/* line 22, ../sass/partials/pages/_news.scss */
+.blog .ind-post:hover {
   background-color: #f6f4f2;
   color: #84070d;
 }
-/* line 22, ../sass/partials/pages/_news.scss */
-.page-template-page-templatesnews-php .ind-post:hover .date {
-  background-color: #84070d;
+/* line 25, ../sass/partials/pages/_news.scss */
+.blog .ind-post:hover .date {
+  background-image: url("../images/date-hover.png");
 }
-/* line 27, ../sass/partials/pages/_news.scss */
-.page-template-page-templatesnews-php .date {
+/* line 28, ../sass/partials/pages/_news.scss */
+.blog .ind-post:hover hr {
+  border-top: 3px solid #51070d;
+  max-width: 240px;
+  margin-right: 25px;
+}
+/* line 35, ../sass/partials/pages/_news.scss */
+.blog .date {
   background-color: #dad5ca;
   margin-bottom: 10px;
+}
+
+/* line 40, ../sass/partials/pages/_news.scss */
+.nav-previous, .nav-next {
+  height: 40px;
+  width: 40px;
+}
+
+/* line 44, ../sass/partials/pages/_news.scss */
+.nav-previous {
+  background-image: url("../images/prev-default.png");
+}
+/* line 46, ../sass/partials/pages/_news.scss */
+.nav-previous:hover {
+  background-image: url("../images/prev-hover.png");
+}
+
+/* line 50, ../sass/partials/pages/_news.scss */
+.nav-next {
+  background-image: url("../images/next-default.png");
+}
+/* line 52, ../sass/partials/pages/_news.scss */
+.nav-next:hover {
+  background-image: url("../images/next-hover.png");
 }
 
 /* line 2, ../sass/partials/pages/_strategies.scss */
@@ -8828,11 +8868,11 @@ footer a:hover {
   /*-------- End About Us ----------*/
   /*-------- Start News ----------*/
   /* line 65, ../sass/partials/mobile/iPhone/_both.scss */
-  .page-template-page-templatesnews-php .col-md-4 img {
+  .blog .col-md-4 img {
     display: none;
   }
   /* line 70, ../sass/partials/mobile/iPhone/_both.scss */
-  .page-template-page-templatesnews-php .col-md-7:first-child {
+  .blog .col-md-7:first-child {
     margin-left: 0;
   }
 
@@ -8910,6 +8950,15 @@ footer a:hover {
   /* line 14, ../sass/partials/mobile/iPad/_portrait.scss */
   .single-strategy .col-md-8 {
     padding-top: 25px;
+  }
+
+  /* line 20, ../sass/partials/mobile/iPad/_portrait.scss */
+  .blog .col-md-7:first-child {
+    margin: auto;
+  }
+  /* line 26, ../sass/partials/mobile/iPad/_portrait.scss */
+  .blog .row img.img-responsive {
+    display: none;
   }
 }
 @media (max-width: 767px) {
