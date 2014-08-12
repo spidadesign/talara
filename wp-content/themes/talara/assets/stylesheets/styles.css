@@ -8695,38 +8695,38 @@ footer a:hover {
 }
 
 /* line 1, ../sass/partials/pages/_team.scss */
-.page-template-page-templatesteam-php {
+.page-template-page-templatesteam-php, .single-strategy {
   font-size: 16px;
   color: #454546;
 }
 /* line 4, ../sass/partials/pages/_team.scss */
-.page-template-page-templatesteam-php .top-title {
+.page-template-page-templatesteam-php .top-title, .single-strategy .top-title {
   display: inline-block;
 }
 /* line 7, ../sass/partials/pages/_team.scss */
-.page-template-page-templatesteam-php .title {
+.page-template-page-templatesteam-php .title, .single-strategy .title {
   color: #84070d;
   font-size: 20px;
 }
 /* line 10, ../sass/partials/pages/_team.scss */
-.page-template-page-templatesteam-php .title span {
+.page-template-page-templatesteam-php .title span, .single-strategy .title span {
   display: block;
   font-size: 16px;
   margin-bottom: 10px;
 }
 /* line 16, ../sass/partials/pages/_team.scss */
-.page-template-page-templatesteam-php .btn {
+.page-template-page-templatesteam-php .btn, .single-strategy .btn {
   height: 30px;
   border-radius: 50px;
 }
 /* line 19, ../sass/partials/pages/_team.scss */
-.page-template-page-templatesteam-php .btn.active {
+.page-template-page-templatesteam-php .btn.active, .single-strategy .btn.active {
   box-shadow: none;
   background-color: #84070d;
   border-color: #84070d;
 }
 /* line 25, ../sass/partials/pages/_team.scss */
-.page-template-page-templatesteam-php .btn-default {
+.page-template-page-templatesteam-php .btn-default, .single-strategy .btn-default {
   margin-top: 15px;
   background-color: #dad5ca;
   color: #fff;
@@ -8734,12 +8734,12 @@ footer a:hover {
   font-size: 14px;
 }
 /* line 32, ../sass/partials/pages/_team.scss */
-.page-template-page-templatesteam-php .btn-default:hover {
+.page-template-page-templatesteam-php .btn-default:hover, .single-strategy .btn-default:hover {
   background-color: #84070d;
   border-color: #84070d;
 }
 /* line 37, ../sass/partials/pages/_team.scss */
-.page-template-page-templatesteam-php .btn-danger {
+.page-template-page-templatesteam-php .btn-danger, .single-strategy .btn-danger {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   border-color: #b5b1a9;
   background-color: #fff;
@@ -8747,7 +8747,7 @@ footer a:hover {
   font-size: 12px;
 }
 /* line 43, ../sass/partials/pages/_team.scss */
-.page-template-page-templatesteam-php .btn-danger:hover {
+.page-template-page-templatesteam-php .btn-danger:hover, .single-strategy .btn-danger:hover {
   background-color: #84070d;
   border-color: #84070d;
   color: #fff;

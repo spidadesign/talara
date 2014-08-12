@@ -23,8 +23,19 @@
 
 		if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
 			$custom = get_post_custom();
-			
 ?>
+<div class="title-bar">
+	<div class="container">
+		<?php if($strategy_type[2] === 'private-investment'): ?>
+			<h1 class="top-title">Private Equity</h1>
+			<div class="pull-right navigation">
+				<a class="btn btn-default staff" href="<?php echo site_url(); ?>/portfolio">Portfolio</a>
+			</div>
+		<?php else: ?>
+			<h1>Long Only and Long Short Equity</h1>
+		<?php endif; ?>
+	</div>
+</div>
 	<div class="container content">
 		<?php the_content(); ?>
 	</div>
