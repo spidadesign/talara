@@ -8442,7 +8442,7 @@ footer a:hover {
 
 /* line 19, ../sass/partials/pages/_home.scss */
 .blog-home {
-  margin-top: 120px;
+  margin-top: 30px;
 }
 /* line 21, ../sass/partials/pages/_home.scss */
 .blog-home p {
@@ -8515,7 +8515,7 @@ footer a:hover {
 }
 /* line 6, ../sass/partials/pages/_about.scss */
 .page-template-page-templatesabout-php .col-md-7::first-letter {
-  font-size: 82px;
+  font-size: 62px;
   float: left;
   line-height: 60px;
   padding-top: 4px;
@@ -8808,8 +8808,13 @@ footer a:hover {
 }
 
 /* line 26, ../sass/partials/pages/_contact.scss */
-.joe {
+.more-info {
   margin-top: 20px;
+}
+/* line 28, ../sass/partials/pages/_contact.scss */
+.more-info .red, .more-info a {
+  color: #84070d;
+  font-size: larger;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {

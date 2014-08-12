@@ -3,7 +3,7 @@
 	font-weight: 600;
 	&::first-letter{
 		font-size:80px;
-		float: left;	
+		float: left;
 		line-height: 50px;
 		padding-top: 12px;
 		padding-right: 4px;
@@ -17,7 +17,7 @@
 }
 
 .blog-home{
-	margin-top: 120px;
+	margin-top: 30px;
 	p{
 		@include all-font(14px, black, 'arial');
 		margin-top: 10px;
