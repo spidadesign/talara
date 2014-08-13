@@ -33,6 +33,9 @@
 			else if(type === 'advisory'){
 				$(".advisory").addClass('active');
 			}
+			else{
+				$(".staff").addClass('active');
+			}
 		});
 		function initialize() {
 			var styles = [

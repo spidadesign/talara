@@ -34,7 +34,7 @@
 		<?php if($st_page === 'private-investment'): ?>
 			<h1 class="top-title">Private Equity</h1>
 			<div class="pull-right navigation">
-				<a class="btn btn-default staff" href="<?php echo site_url(); ?>/portfolio">Portfolio</a>
+				<a class="btn btn-default advisory" href="<?php echo site_url(); ?>/portfolio">Portfolio</a>
 			</div>
 		<?php else: ?>
 			<h1>Long Only and Long Short Equity</h1>
