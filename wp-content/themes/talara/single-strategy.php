@@ -23,11 +23,15 @@
 
 		if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
 			$custom = get_post_custom();
-			print_r($strategy_type);
+			if($strategy_type[1] === 'talara'):
+				$st_page = $strategy_type[2];
+			else:
+				$st_page = $strategy_type[2];
+			endif;
 ?>
 <div class="title-bar">
 	<div class="container">
-		<?php if($strategy_type[2] === 'private-investment'): ?>
+		<?php if($st_page === 'private-investment'): ?>
 			<h1 class="top-title">Private Equity</h1>
 			<div class="pull-right navigation">
 				<a class="btn btn-default staff" href="<?php echo site_url(); ?>/portfolio">Portfolio</a>
