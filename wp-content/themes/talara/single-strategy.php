@@ -23,6 +23,7 @@
 
 		if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
 			$custom = get_post_custom();
+			print_r($strategy_type);
 ?>
 <div class="title-bar">
 	<div class="container">
@@ -39,9 +40,9 @@
 	<div class="container content">
 		<?php the_content(); ?>
 	</div>
-		<?php 
-		endwhile; 
-		endif; 
-		wp_reset_postdata(); 
-		get_footer(); 
+		<?php
+		endwhile;
+		endif;
+		wp_reset_postdata();
+		get_footer();
 	?>
