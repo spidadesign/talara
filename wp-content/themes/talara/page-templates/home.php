@@ -7,10 +7,11 @@
 		'order' => 'asc'
 		);
 	$slider  = new WP_Query( $slider_args );
+	$attr = array('class' => 'img-responsive');
 ?>
 	<div class="header-slider">
 	<?php if ( $slider->have_posts() ) : while ( $slider->have_posts() ) : $slider->the_post();	?>
-	<div class="slider-img"><?php echo get_the_post_thumbnail();?></div>
+	<div class="slider-img"><?php the_post_thumbnail('full', $attr);?></div>
 	<?php
 		endwhile;
 		endif;
