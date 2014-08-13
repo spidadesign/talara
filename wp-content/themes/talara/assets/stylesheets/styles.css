@@ -8301,6 +8301,7 @@ button.close {
 /* line 14, ../sass/partials/_base.scss */
 .title-bar h1 {
   font-size: 30px;
+  padding-left: 7px;
 }
 
 /* line 1, ../sass/partials/_header.scss */
