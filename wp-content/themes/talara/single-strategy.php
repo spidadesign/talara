@@ -24,7 +24,7 @@
 		if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
 			$custom = get_post_custom();
 			if($strategy_type[1] === 'talara'):
-				$st_page = $strategy_type[2];
+				$st_page = $strategy_type[3];
 			else:
 				$st_page = $strategy_type[2];
 			endif;
