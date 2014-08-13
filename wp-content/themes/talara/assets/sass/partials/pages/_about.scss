@@ -1,8 +1,10 @@
 .page-template-page-templatesabout-php{
-	.col-md-7{
+	.content-about{
 		font-size: 16px;
 		color: #8f8d88;
 		margin-top: 55px;
+		float:left;
+		max-width: 500px;
 		&::first-letter{
 			font-size:62px;
 			float: left;
@@ -21,5 +23,14 @@
 	}
 	.about{
 		margin-bottom: 20px;
+		img{
+			float: left;
+			&:nth-child(odd){
+				margin-right: 60px;
+			}
+			&:nth-child(even){
+				margin-left: 60px;
+			}
+		}
 	}
 }

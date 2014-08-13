@@ -8509,13 +8509,15 @@ footer a:hover {
 }
 
 /* line 2, ../sass/partials/pages/_about.scss */
-.page-template-page-templatesabout-php .col-md-7 {
+.page-template-page-templatesabout-php .content-about {
   font-size: 16px;
   color: #8f8d88;
   margin-top: 55px;
+  float: left;
+  max-width: 500px;
 }
-/* line 6, ../sass/partials/pages/_about.scss */
-.page-template-page-templatesabout-php .col-md-7::first-letter {
+/* line 8, ../sass/partials/pages/_about.scss */
+.page-template-page-templatesabout-php .content-about::first-letter {
   font-size: 62px;
   float: left;
   line-height: 60px;
@@ -8525,15 +8527,27 @@ footer a:hover {
   font-weight: normal;
   color: #84070d;
 }
-/* line 16, ../sass/partials/pages/_about.scss */
-.page-template-page-templatesabout-php .col-md-7.red {
+/* line 18, ../sass/partials/pages/_about.scss */
+.page-template-page-templatesabout-php .content-about.red {
   color: #84070d;
   font-size: 20px;
   line-height: 35px;
 }
-/* line 22, ../sass/partials/pages/_about.scss */
+/* line 24, ../sass/partials/pages/_about.scss */
 .page-template-page-templatesabout-php .about {
   margin-bottom: 20px;
+}
+/* line 26, ../sass/partials/pages/_about.scss */
+.page-template-page-templatesabout-php .about img {
+  float: left;
+}
+/* line 28, ../sass/partials/pages/_about.scss */
+.page-template-page-templatesabout-php .about img:nth-child(odd) {
+  margin-right: 60px;
+}
+/* line 31, ../sass/partials/pages/_about.scss */
+.page-template-page-templatesabout-php .about img:nth-child(even) {
+  margin-left: 60px;
 }
 
 /* line 3, ../sass/partials/pages/_news.scss */

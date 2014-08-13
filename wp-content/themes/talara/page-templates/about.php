@@ -11,5 +11,6 @@
 </div>
 <div class="container about">
 	<?php echo get_post()->post_content; ?>
+
 </div>
 <?php get_footer(); ?>
