@@ -22,6 +22,7 @@
 			$('.header-slider').slick({
 				fade: true,
 				dots: true,
+				centerMode: true,
 			});
 			$('.header-slider .slick-dots').addClass('container');
 			$('.blog-slider').slick({});
@@ -41,7 +42,6 @@
 			var styles = [
 				{
 			     stylers: [
-			       //{ hue: "#b5b1a9" },
 			        { saturation: -100 },
 			        { lightness: -10 },
 			        { gamma: 1.00 }
