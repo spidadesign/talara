@@ -20,18 +20,18 @@
 			box-shadow: none;
 			background-color: $maroon;
 			border-color: $maroon;
+			color:#fff;
 		}
 	}
 	.btn-default{
 		margin-top:15px;
-		background-color: #dad5ca;
-		color: #fff;
+		color: #333333;
 		border-color:#dad5ca;
 		font-size: 14px;
-		// padding-top: 4px;
 		&:hover{
 			background-color: $maroon;
 			border-color: $maroon;
+			color:#fff;
 		}
 	}
 	.btn-danger{
@@ -53,7 +53,6 @@
 .member{
 	p{
 		&:first-child{
-			//display: inline;
 		}
 	}
 }

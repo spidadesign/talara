@@ -1,5 +1,5 @@
 .main{
-	@include all-font(22px, $maroon, $georgia);
+	@include all-font(17px, $maroon, $georgia);
 	font-weight: 600;
 	&::first-letter{
 		font-size:80px;
@@ -17,7 +17,7 @@
 }
 
 .blog-home{
-	margin-top: 30px;
+	margin-top: 15px;
 	p{
 		@include all-font(14px, black, 'arial');
 		margin-top: 10px;

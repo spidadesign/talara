@@ -6,11 +6,10 @@
 		float:left;
 		max-width: 500px;
 		&::first-letter{
-			font-size:62px;
+			font-size: 55px;
 			float: left;
-			line-height: 60px;
-			padding-top: 4px;
-			padding-right: 4px;
+			line-height: 55px;
+			padding-right: 3px;
 			padding-left: 3px;
 			font-weight: normal;
 			color: $maroon;

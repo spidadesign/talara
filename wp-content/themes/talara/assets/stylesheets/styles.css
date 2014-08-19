@@ -8294,11 +8294,10 @@ button.close {
 
 /* line 10, ../sass/partials/_base.scss */
 .title-bar {
-  background-color: #f6f4f2;
   color: #84070d;
   margin-bottom: 30px;
 }
-/* line 14, ../sass/partials/_base.scss */
+/* line 13, ../sass/partials/_base.scss */
 .title-bar h1 {
   font-size: 30px;
   padding-left: 7px;
@@ -8354,14 +8353,13 @@ nav {
 /* line 46, ../sass/partials/_header.scss */
 .logo {
   border-bottom: 3px solid #51070d;
-  background-color: #fff;
 }
-/* line 49, ../sass/partials/_header.scss */
+/* line 48, ../sass/partials/_header.scss */
 .logo img {
   height: 100px;
 }
 
-/* line 55, ../sass/partials/_header.scss */
+/* line 54, ../sass/partials/_header.scss */
 .navbar-nav > li > .dropdown-menu {
   background-color: #84070d;
   padding: 0;
@@ -8369,22 +8367,22 @@ nav {
   border-radius: 0;
 }
 
-/* line 64, ../sass/partials/_header.scss */
+/* line 63, ../sass/partials/_header.scss */
 .navbar-right .dropdown-menu {
   right: auto;
 }
 
-/* line 70, ../sass/partials/_header.scss */
+/* line 69, ../sass/partials/_header.scss */
 .dropdown-menu > li > a {
   color: white;
 }
-/* line 72, ../sass/partials/_header.scss */
+/* line 71, ../sass/partials/_header.scss */
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
   background-color: #51070d;
   color: white;
 }
 
-/* line 81, ../sass/partials/_header.scss */
+/* line 80, ../sass/partials/_header.scss */
 .dropdown:hover .dropdown-menu {
   display: block;
 }
@@ -8421,7 +8419,7 @@ footer a:hover {
 
 /* line 1, ../sass/partials/pages/_home.scss */
 .main {
-  font-size: 22px;
+  font-size: 17px;
   color: #84070d;
   font-family: "adobe-caslon-pro";
   font-weight: 600;
@@ -8444,7 +8442,7 @@ footer a:hover {
 
 /* line 19, ../sass/partials/pages/_home.scss */
 .blog-home {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 /* line 21, ../sass/partials/pages/_home.scss */
 .blog-home p {
@@ -8519,34 +8517,33 @@ footer a:hover {
 }
 /* line 8, ../sass/partials/pages/_about.scss */
 .page-template-page-templatesabout-php .content-about::first-letter {
-  font-size: 62px;
+  font-size: 55px;
   float: left;
-  line-height: 60px;
-  padding-top: 4px;
-  padding-right: 4px;
+  line-height: 55px;
+  padding-right: 3px;
   padding-left: 3px;
   font-weight: normal;
   color: #84070d;
 }
-/* line 18, ../sass/partials/pages/_about.scss */
+/* line 17, ../sass/partials/pages/_about.scss */
 .page-template-page-templatesabout-php .content-about.red {
   color: #84070d;
   font-size: 20px;
   line-height: 35px;
 }
-/* line 24, ../sass/partials/pages/_about.scss */
+/* line 23, ../sass/partials/pages/_about.scss */
 .page-template-page-templatesabout-php .about {
   margin-bottom: 20px;
 }
-/* line 26, ../sass/partials/pages/_about.scss */
+/* line 25, ../sass/partials/pages/_about.scss */
 .page-template-page-templatesabout-php .about img {
   float: left;
 }
-/* line 28, ../sass/partials/pages/_about.scss */
+/* line 27, ../sass/partials/pages/_about.scss */
 .page-template-page-templatesabout-php .about img:nth-child(odd) {
   margin-right: 60px;
 }
-/* line 31, ../sass/partials/pages/_about.scss */
+/* line 30, ../sass/partials/pages/_about.scss */
 .page-template-page-templatesabout-php .about img:nth-child(even) {
   margin-left: 60px;
 }
@@ -8595,7 +8592,7 @@ footer a:hover {
 }
 /* line 39, ../sass/partials/pages/_news.scss */
 .blog .date {
-  background-color: #dad5ca;
+  background-color: #000;
   margin-bottom: 10px;
 }
 
@@ -8697,14 +8694,15 @@ footer a:hover {
   height: 30px;
   border-radius: 50px;
   float: right;
+  padding-top: 8px;
 }
-/* line 26, ../sass/partials/pages/_portfolio.scss */
+/* line 27, ../sass/partials/pages/_portfolio.scss */
 .page-template-page-templatesportfolio-php .btn-default:hover {
   color: #fff;
   background-color: #84070d;
 }
 
-/* line 32, ../sass/partials/pages/_portfolio.scss */
+/* line 33, ../sass/partials/pages/_portfolio.scss */
 .portfolio-img {
   padding-top: 25px;
 }
@@ -8739,19 +8737,20 @@ footer a:hover {
   box-shadow: none;
   background-color: #84070d;
   border-color: #84070d;
+  color: #fff;
 }
-/* line 25, ../sass/partials/pages/_team.scss */
+/* line 26, ../sass/partials/pages/_team.scss */
 .page-template-page-templatesteam-php .btn-default, .single-strategy .btn-default {
   margin-top: 15px;
-  background-color: #dad5ca;
-  color: #fff;
+  color: #333333;
   border-color: #dad5ca;
   font-size: 14px;
 }
-/* line 32, ../sass/partials/pages/_team.scss */
+/* line 31, ../sass/partials/pages/_team.scss */
 .page-template-page-templatesteam-php .btn-default:hover, .single-strategy .btn-default:hover {
   background-color: #84070d;
   border-color: #84070d;
+  color: #fff;
 }
 /* line 37, ../sass/partials/pages/_team.scss */
 .page-template-page-templatesteam-php .btn-danger, .single-strategy .btn-danger {

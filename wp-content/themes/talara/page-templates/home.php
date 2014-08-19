@@ -20,7 +20,7 @@
 
 	</div>
 	<div class="container">
-		<div class="col-md-8 col-sm-12 col-xs-12 main">
+		<div class="col-md-9 col-sm-12 col-xs-12 main">
 			<?php the_content(); ?>
 		</div>
 	</div>
@@ -34,7 +34,6 @@
 						$count = 0;
 						if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); 
 							if(($count % 2 === 0) && ($count !== 0)):
-								
 								echo "</div><div>";
 							endif;
 							$custom = get_post_custom(get_the_ID());
@@ -48,9 +47,8 @@
 								endforeach;
 							elseif($custom):
 								$guid = $custom['site_url'][0]; 
-								
 							endif;
-							
+
 						?>
 						   	<div class="col-md-6 ind-post">
 						   		<a href="<?php echo $guid ?>" target="_blank">
