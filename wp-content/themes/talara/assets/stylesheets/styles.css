@@ -8391,7 +8391,7 @@ nav {
 
 /* line 1, ../sass/partials/_footer.scss */
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;

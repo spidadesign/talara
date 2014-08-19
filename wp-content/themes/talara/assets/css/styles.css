@@ -5478,7 +5478,8 @@ button.close {
   color: #84070d;
   margin-bottom: 30px; }
   .title-bar h1 {
-    font-size: 30px; }
+    font-size: 30px;
+    padding-left: 7px; }
 
 nav {
   height: 40px;
@@ -5507,12 +5508,13 @@ nav {
   border-bottom: 3px solid #51070d; }
   .header-slider .slick-slide img {
     width: 100%;
-    height: 475px;
-    max-width: 2000px; }
+    height: 375px;
+    max-width: 2000px;
+    margin: auto; }
 
 .logo {
   border-bottom: 3px solid #51070d;
-  background-color: #f6f4f2; }
+  background-color: #fff; }
   .logo img {
     height: 100px; }
 
@@ -5535,7 +5537,7 @@ nav {
   display: block; }
 
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
@@ -5576,7 +5578,7 @@ footer {
     font-weight: normal; }
 
 .blog-home {
-  margin-top: 120px; }
+  margin-top: 30px; }
   .blog-home p {
     font-size: 14px;
     color: black;
@@ -5620,12 +5622,14 @@ footer {
   .ind-post:hover {
     text-decoration: none; }
 
-.page-template-page-templatesabout-php .col-md-7 {
+.page-template-page-templatesabout-php .content-about {
   font-size: 16px;
   color: #8f8d88;
-  margin-top: 55px; }
-  .page-template-page-templatesabout-php .col-md-7::first-letter {
-    font-size: 82px;
+  margin-top: 55px;
+  float: left;
+  max-width: 500px; }
+  .page-template-page-templatesabout-php .content-about::first-letter {
+    font-size: 62px;
     float: left;
     line-height: 60px;
     padding-top: 4px;
@@ -5633,12 +5637,18 @@ footer {
     padding-left: 3px;
     font-weight: normal;
     color: #84070d; }
-  .page-template-page-templatesabout-php .col-md-7.red {
+  .page-template-page-templatesabout-php .content-about.red {
     color: #84070d;
     font-size: 20px;
     line-height: 35px; }
 .page-template-page-templatesabout-php .about {
   margin-bottom: 20px; }
+  .page-template-page-templatesabout-php .about img {
+    float: left; }
+    .page-template-page-templatesabout-php .about img:nth-child(odd) {
+      margin-right: 60px; }
+    .page-template-page-templatesabout-php .about img:nth-child(even) {
+      margin-left: 60px; }
 
 .blog .col-md-7:first-child {
   margin-left: 40px; }
@@ -5740,41 +5750,41 @@ footer {
 .portfolio-img {
   padding-top: 25px; }
 
-.page-template-page-templatesteam-php {
+.page-template-page-templatesteam-php, .single-strategy {
   font-size: 16px;
   color: #454546; }
-  .page-template-page-templatesteam-php .top-title {
+  .page-template-page-templatesteam-php .top-title, .single-strategy .top-title {
     display: inline-block; }
-  .page-template-page-templatesteam-php .title {
+  .page-template-page-templatesteam-php .title, .single-strategy .title {
     color: #84070d;
     font-size: 20px; }
-    .page-template-page-templatesteam-php .title span {
+    .page-template-page-templatesteam-php .title span, .single-strategy .title span {
       display: block;
       font-size: 16px;
       margin-bottom: 10px; }
-  .page-template-page-templatesteam-php .btn {
+  .page-template-page-templatesteam-php .btn, .single-strategy .btn {
     height: 30px;
     border-radius: 50px; }
-    .page-template-page-templatesteam-php .btn.active {
+    .page-template-page-templatesteam-php .btn.active, .single-strategy .btn.active {
       box-shadow: none;
       background-color: #84070d;
       border-color: #84070d; }
-  .page-template-page-templatesteam-php .btn-default {
+  .page-template-page-templatesteam-php .btn-default, .single-strategy .btn-default {
     margin-top: 15px;
     background-color: #dad5ca;
     color: #fff;
     border-color: #dad5ca;
     font-size: 14px; }
-    .page-template-page-templatesteam-php .btn-default:hover {
+    .page-template-page-templatesteam-php .btn-default:hover, .single-strategy .btn-default:hover {
       background-color: #84070d;
       border-color: #84070d; }
-  .page-template-page-templatesteam-php .btn-danger {
+  .page-template-page-templatesteam-php .btn-danger, .single-strategy .btn-danger {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     border-color: #b5b1a9;
     background-color: #fff;
     color: #b5b1a9;
     font-size: 12px; }
-    .page-template-page-templatesteam-php .btn-danger:hover {
+    .page-template-page-templatesteam-php .btn-danger:hover, .single-strategy .btn-danger:hover {
       background-color: #84070d;
       border-color: #84070d;
       color: #fff; }
@@ -5814,8 +5824,11 @@ footer {
 .gmnoprint {
   display: none !important; }
 
-.joe {
+.more-info {
   margin-top: 20px; }
+  .more-info .red, .more-info a {
+    color: #84070d;
+    font-size: larger; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
   body {
