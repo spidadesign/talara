@@ -20,10 +20,10 @@
 		<span>Houston, TX 77010</span>
 		<div id="houston" class="map-canvas"></div>
 	</div>
-	<div class="col-md-4">
-		<span class="more-info">For more information on Talara Capital Management, please contact us at 
-			<span class="red">(646)396-6040</span> 
-			or email us at 
+	<div class="col-md-5">
+		<span class="more-info">For more information on Talara Capital Management, please contact us at
+			<span class="red" style="display:inline">(646)396-6040</span><br>
+			or email us at
 			<a href="mailto:info@talaracapital.com">info@talaracapital.com</a>
 		</span>
 	</div>
